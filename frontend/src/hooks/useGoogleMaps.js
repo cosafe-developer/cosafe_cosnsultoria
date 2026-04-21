@@ -54,6 +54,7 @@ export function useGoogleMaps(apiKey, libraries = ["places"]) {
     script.src      = `https://maps.googleapis.com/maps/api/js`
       + `?key=${apiKey}`
       + `&libraries=${libraries.join(",")}`
+      + `&loading=async`
       + `&callback=${CALLBACK_FN}`;
 
     script.onerror = () => {

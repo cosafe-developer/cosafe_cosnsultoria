@@ -146,9 +146,10 @@ export default function Projects({ projects = [] }) {
         scrollTrigger: { trigger: metricsRef.current, start: "top 85%", once: true },
       }
     );
-    if (gridRef.current && gridRef.current.children.length > 0) {
+    const cards = gsap.utils.toArray(".gsap-proj", sectionRef.current);
+    if (cards.length > 0) {
       gsap.fromTo(
-        ".gsap-proj",
+        cards,
         { autoAlpha: 0, y: 36, scale: 0.95 },
         {
           autoAlpha: 1, y: 0, scale: 1, stagger: 0.14, duration: 0.7, ease: "power3.out",
