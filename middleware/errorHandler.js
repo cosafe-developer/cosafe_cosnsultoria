@@ -23,8 +23,8 @@ export const notFound = (_req, res) =>
  */
 export const errorHandler = (err, _req, res, _next) => {
   console.error("[ErrorHandler]", err.stack ?? err.message);
-  res.status(err.status ?? 500).json({
-    success: false,
-    error: err.message ?? "Internal server error",
-  });
+  const status = err.status ?? 500;
+  // Never expose internal error details to the client
+  const message = status >= 500 ? "Internal server error" : (err.message ?? "Error");
+  res.status(status).json({ success: false, error: message });
 };

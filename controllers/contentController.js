@@ -435,12 +435,17 @@ export const getProjects = (_req, res) => {
 export const submitContact = async (req, res) => {
   const { name, email, company, service, message, address } = req.body ?? {};
 
-  // ── Validación básica ────────────────────────────────────────────────────
+  // ── Validación básica + límites de longitud ──────────────────────────────
   if (!name?.trim() || !email?.trim() || !message?.trim()) {
     return res.status(400).json({
       success: false,
       error: "Los campos nombre, email y mensaje son obligatorios.",
     });
+  }
+
+  if (name.length > 120 || email.length > 254 || message.length > 5000 ||
+      (company && company.length > 120) || (service && service.length > 120)) {
+    return res.status(400).json({ success: false, error: "Uno o más campos exceden la longitud permitida." });
   }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

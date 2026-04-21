@@ -23,6 +23,7 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
+import rateLimit from "express-rate-limit";
 import servicesRouter from "./routes/services.js";
 import contentRouter  from "./routes/content.js";
 import { submitContact } from "./controllers/contentController.js";
@@ -67,9 +68,18 @@ app.get("/api/health", (_req, res) =>
   res.json({ status: "ok", timestamp: new Date().toISOString() })
 );
 
+// ── Rate limiting — anti-spam en formulario de contacto ───────────────────
+const contactLimiter = rateLimit({
+  windowMs       : 15 * 60 * 1000,  // ventana de 15 minutos
+  max            : 5,                // máximo 5 envíos por IP por ventana
+  standardHeaders: true,
+  legacyHeaders  : false,
+  message        : { success: false, error: "Demasiadas solicitudes. Intenta de nuevo en 15 minutos." },
+});
+
 app.use("/api/services", servicesRouter);
 app.use("/api/content",  contentRouter);
-app.post("/api/contact", submitContact);
+app.post("/api/contact", contactLimiter, submitContact);
 
 // ── Error handling ─────────────────────────────────────────────────────────
 app.use(notFound);

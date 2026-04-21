@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import DOMPurify from "dompurify";
+
+const sanitizeDOF = (html) => DOMPurify.sanitize(html, { USE_PROFILES: { html: true } });
 import {
   Newspaper, TrendingUp, FileText, Search,
   ArrowLeft, Loader2, AlertCircle, BookOpen,
@@ -147,10 +150,9 @@ function NotaCard({ nota, showContent = false }) {
         </div>
       </div>
       {showContent && nota.cadenaContenido?.trim() && (
-        /* Content from the official DOF API — rendered as-is */
         <div
           className="mt-3 pt-3 border-t border-ui-border text-xs text-ink-mid leading-relaxed overflow-auto max-h-64"
-          dangerouslySetInnerHTML={{ __html: nota.cadenaContenido }}
+          dangerouslySetInnerHTML={{ __html: sanitizeDOF(nota.cadenaContenido) }}
         />
       )}
     </div>
