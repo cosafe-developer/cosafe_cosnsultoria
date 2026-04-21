@@ -12,7 +12,7 @@ import SectionLabel from "../components/ui/SectionLabel.jsx";
 import Button from "../components/ui/Button.jsx";
 
 /* ─── Config ─────────────────────────────────────────────────────────────────── */
-const DOF_BASE = "/dof-api/dof/sidof";
+const DOF_BASE = "/api/dof";
 
 /* ─── Helpers ────────────────────────────────────────────────────────────────── */
 const toApi = (htmlDate) => {

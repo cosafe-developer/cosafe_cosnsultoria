@@ -26,6 +26,7 @@ import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 import servicesRouter from "./routes/services.js";
 import contentRouter  from "./routes/content.js";
+import dofRouter      from "./routes/dof.js";
 import { submitContact } from "./controllers/contentController.js";
 import { notFound, errorHandler } from "./middleware/errorHandler.js";
 
@@ -79,6 +80,7 @@ const contactLimiter = rateLimit({
 
 app.use("/api/services", servicesRouter);
 app.use("/api/content",  contentRouter);
+app.use("/api/dof",      dofRouter);
 app.post("/api/contact", contactLimiter, submitContact);
 
 // ── Error handling ─────────────────────────────────────────────────────────
