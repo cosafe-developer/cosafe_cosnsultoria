@@ -10,8 +10,8 @@ const projectsPath = join(__dirname, "../data/projects.json");
 const loadContent  = () => JSON.parse(readFileSync(dataPath,     "utf-8"));
 const loadProjects = () => JSON.parse(readFileSync(projectsPath, "utf-8"));
 
-// ── Resend client ──────────────────────────────────────────────────────────
-const resend = new Resend(process.env.RESEND_API_KEY);
+// ── Resend client (lazy — evita crash en arranque si falta la API key) ────
+const getResend = () => new Resend(process.env.RESEND_API_KEY);
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 
@@ -480,7 +480,7 @@ export const submitContact = async (req, res) => {
 
   // ── Envío con Resend ─────────────────────────────────────────────────────
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResend().emails.send({
       from   : process.env.RESEND_FROM ?? "cotizaciones@cosafeconsultoria.com",
       to     : [process.env.RESEND_TO  ?? "administracion@cosafeconsultoria.com"],
       replyTo: email,
