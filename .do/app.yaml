@@ -3,7 +3,7 @@ region: nyc
 
 services:
   - name: backend
-    source_dir: coSAFEConsultoria_Backend
+    source_dir: backend
     github:
       repo: cosafe-developer/cosafe_cosnsultoria
       branch: main
@@ -33,7 +33,7 @@ services:
 
 static_sites:
   - name: frontend
-    source_dir: coSAFEConsultoria_Frontend
+    source_dir: frontend
     github:
       repo: cosafe-developer/cosafe_cosnsultoria
       branch: main
