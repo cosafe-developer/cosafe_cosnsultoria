@@ -47,12 +47,19 @@ export default function AddressAutocomplete({
 
     if (placeholder) el.setAttribute("placeholder", placeholder);
 
-    // Estilos para integrarse con el design system
+    // Estilos para integrarse con el design system (tokens de input-field)
     el.style.cssText = [
       "width:100%",
-      "--gmp-input-placeholder-color:#7a9484",
-      "--gmp-filled-input-border-radius:0.5rem",
       "--gmp-color-surface:#ffffff",
+      "--gmp-color-on-surface:#1e2d25",
+      "--gmp-color-on-surface-variant:#7a9484",
+      "--gmp-color-primary:#01A758",
+      "--gmp-color-outline:#dde8e3",
+      "--gmp-color-outline-variant:#dde8e3",
+      "--gmp-input-placeholder-color:#7a9484",
+      "--gmp-filled-input-border-radius:0.875rem",
+      "--gmp-font-family:'Inter',system-ui,sans-serif",
+      "--gmp-font-size:0.875rem",
     ].join(";");
 
     el.addEventListener("gmp-placeselect", async (e) => {
