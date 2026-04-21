@@ -72,7 +72,7 @@ export default function AddressAutocomplete({
         await AutocompleteSuggestion.fetchAutocompleteSuggestions({
           input,
           sessionToken: sessionTokenRef.current,
-          componentRestrictions: { country: "mx" },
+          includedRegionCodes: ["mx"],
         });
       setSugg(results ?? []);
       setIsOpen((results ?? []).length > 0);
