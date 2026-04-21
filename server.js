@@ -23,15 +23,11 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
-import { fileURLToPath } from "url";
-import { dirname, join } from "path";
-
 import servicesRouter from "./routes/services.js";
 import contentRouter  from "./routes/content.js";
 import { submitContact } from "./controllers/contentController.js";
 import { notFound, errorHandler } from "./middleware/errorHandler.js";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
 const app  = express();
 const PORT = process.env.PORT ?? 3001;
 
@@ -64,9 +60,6 @@ app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));   // pre-flight para todos los endpoints
 app.use(morgan("dev"));
 app.use(express.json({ limit: "64kb" }));  // limita payload para evitar DoS
-
-// ── Static assets ──────────────────────────────────────────────────────────
-app.use("/img", express.static(join(__dirname, "../img")));
 
 // ── Routes ─────────────────────────────────────────────────────────────────
 /** @route GET /api/health — Verificación de disponibilidad del servidor */

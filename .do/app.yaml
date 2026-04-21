@@ -3,7 +3,6 @@ region: nyc
 
 services:
   - name: backend
-    source_dir: backend
     github:
       repo: cosafe-developer/cosafe_cosnsultoria
       branch: main
@@ -12,7 +11,6 @@ services:
     environment_slug: node-js
     instance_count: 1
     instance_size_slug: apps-s-1vcpu-0.5gb
-    http_port: 8080
     routes:
       - path: /api
     envs:
