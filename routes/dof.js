@@ -19,7 +19,7 @@ router.get("/*", async (req, res, next) => {
   try {
     const url = `${DOF_UPSTREAM}${req.path}`;
     const upstream = await fetch(url, {
-      headers: { Accept: "application/json" },
+      headers: { Accept: "*/*" },
       signal : AbortSignal.timeout(10_000),
     });
 
