@@ -1,0 +1,48 @@
+name: cosafe-consultoria
+region: nyc
+
+services:
+  - name: backend
+    source_dir: coSAFEConsultoria_Backend
+    github:
+      repo: cosafe-developer/cosafe_cosnsultoria
+      branch: main
+      deploy_on_push: true
+    run_command: npm start
+    environment_slug: node-js
+    instance_count: 1
+    instance_size_slug: apps-s-1vcpu-0.5gb
+    http_port: 8080
+    routes:
+      - path: /api
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: RESEND_API_KEY
+        scope: RUN_TIME
+        type: SECRET
+      - key: RESEND_FROM
+        scope: RUN_TIME
+        type: SECRET
+      - key: RESEND_TO
+        scope: RUN_TIME
+        type: SECRET
+      - key: ALLOWED_ORIGINS
+        scope: RUN_TIME
+        value: ${APP_URL}
+
+static_sites:
+  - name: frontend
+    source_dir: coSAFEConsultoria_Frontend
+    github:
+      repo: cosafe-developer/cosafe_cosnsultoria
+      branch: main
+      deploy_on_push: true
+    build_command: npm run build
+    output_dir: dist
+    routes:
+      - path: /
+    envs:
+      - key: VITE_GOOGLE_MAPS_API_KEY
+        scope: BUILD_TIME
+        type: SECRET
