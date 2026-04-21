@@ -58,20 +58,26 @@ export default function AddressAutocomplete({
       setIsOpen(false);
       return;
     }
-    if (!sessionTokenRef.current) {
-      sessionTokenRef.current = new window.google.maps.places.AutocompleteSessionToken();
-    }
     setFetching(true);
     try {
+      // importLibrary resuelve de caché si ya fue cargada antes
+      const { AutocompleteSuggestion, AutocompleteSessionToken } =
+        await window.google.maps.importLibrary("places");
+
+      if (!sessionTokenRef.current) {
+        sessionTokenRef.current = new AutocompleteSessionToken();
+      }
+
       const { suggestions: results } =
-        await window.google.maps.places.AutocompleteSuggestion.fetchAutocompleteSuggestions({
+        await AutocompleteSuggestion.fetchAutocompleteSuggestions({
           input,
           sessionToken: sessionTokenRef.current,
           componentRestrictions: { country: "mx" },
         });
       setSugg(results ?? []);
       setIsOpen((results ?? []).length > 0);
-    } catch {
+    } catch (err) {
+      console.error("[AddressAutocomplete]", err);
       setSugg([]);
       setIsOpen(false);
     } finally {
