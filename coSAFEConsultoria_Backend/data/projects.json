@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p1",
+    "title": "Implementación ISO 45001",
+    "client": "Empresa Manufacturera — Tamaulipas",
+    "category": "Seguridad",
+    "description": "Diseño e implementación completa del Sistema de Gestión de Seguridad y Salud en el Trabajo bajo ISO 45001, logrando la certificación en 8 meses.",
+    "result": "Reducción de 70% en accidentes laborales",
+    "year": 2023,
+    "tags": ["ISO 45001", "Manufactura", "Capacitación"]
+  },
+  {
+    "id": "p2",
+    "title": "Licencia Ambiental de Funcionamiento",
+    "client": "Planta Logística — Nuevo Laredo",
+    "category": "Ambiental",
+    "description": "Tramitación integral de la Licencia Ambiental Única ante SEMARNAT y autoridades estatales para nueva planta logística en zona fronteriza.",
+    "result": "Licencia obtenida en tiempo récord: 4 meses",
+    "year": 2023,
+    "tags": ["SEMARNAT", "Logística", "Permisos"]
+  },
+  {
+    "id": "p3",
+    "title": "Programa de Medicina del Trabajo",
+    "client": "Corporativo de Servicios — Monterrey",
+    "category": "Salud",
+    "description": "Implementación de programa integral de medicina ocupacional para 500 colaboradores, incluyendo exámenes periódicos y vigilancia epidemiológica.",
+    "result": "100% de cumplimiento NOM-035 STPS",
+    "year": 2022,
+    "tags": ["NOM-035", "Salud Ocupacional", "Servicios"]
+  }
+]

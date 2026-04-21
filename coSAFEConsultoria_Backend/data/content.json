@@ -1,0 +1,44 @@
+{
+  "company": {
+    "name": "coSAFE",
+    "fullName": "coSAFE Consultoría EHSS",
+    "tagline": "Soluciones en Salud, Sostenibilidad, Seguridad y Ambiente",
+    "description": "Somos una consultora especializada en EHS (Medio Ambiente, Salud y Seguridad) con más de 10 años de experiencia apoyando a empresas mexicanas en el cumplimiento normativo y la gestión responsable de sus operaciones.",
+    "phone": "+52 868 354 6152",
+    "email": "administracion@cosafeconsultoria.com",
+    "location": "Matamoros, Tamaulipas, México",
+    "founded": 2014,
+    "social": {
+      "facebook": "https://www.facebook.com/cosafeconsultoria/",
+      "linkedin": "https://mx.linkedin.com/company/cosafe-consultor%C3%ADa-y-capacitacion",
+      "instagram": "https://www.instagram.com/cosafeconsultoria/"
+    }
+  },
+  "hero": {
+    "headline": "Seguridad, Salud y Ambiente",
+    "subheadline": "para el México industrial",
+    "body": "Consultoría especializada en EHS. Cumplimiento normativo, gestión ambiental y cultura de seguridad para empresas de manufactura, servicios e industria.",
+    "cta": {
+      "primary": { "label": "Ver Servicios", "href": "#servicios" },
+      "secondary": { "label": "Contactar", "href": "#contacto" }
+    }
+  },
+  "stats": [
+    { "value": 10, "suffix": "+", "label": "Años de experiencia" },
+    { "value": 200, "suffix": "+", "label": "Empresas atendidas" },
+    { "value": 98, "suffix": "%", "label": "Clientes satisfechos" },
+    { "value": 50, "suffix": "+", "label": "Normativas dominadas" }
+  ],
+  "about": {
+    "heading": "Comprometidos con la seguridad industrial de México",
+    "body": "En coSAFE combinamos experiencia técnica con conocimiento regulatorio para que tu empresa opere con los más altos estándares de seguridad, salud ocupacional y responsabilidad ambiental. Nuestro equipo multidisciplinario atiende desde PYMES hasta grandes corporativos en los sectores de manufactura, logística, construcción y servicios.",
+    "values": [
+      { "icon": "shield", "title": "Rigor Técnico", "desc": "Cada solución está respaldada por normatividad vigente y mejores prácticas internacionales." },
+      { "icon": "leaf", "title": "Compromiso Ambiental", "desc": "Impulsamos operaciones responsables que cuidan el entorno y cumplen con la regulación ambiental." },
+      { "icon": "users", "title": "Enfoque Humano", "desc": "La seguridad de las personas es el centro de todo lo que hacemos." }
+    ]
+  },
+  "certifications": [
+    "STPS", "SEMARNAT", "PROFEPA", "ISO 14001", "ISO 45001", "IMSS", "Protección Civil"
+  ]
+}

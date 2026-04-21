@@ -1,0 +1,92 @@
+[
+  {
+    "id": "ambiental",
+    "slug": "soluciones-ambientales",
+    "title": "Trámites y Soluciones Ambientales",
+    "shortTitle": "Ambiental",
+    "icon": "leaf",
+    "category": "Medio Ambiente",
+    "description": "Gestionamos trámites ante SEMARNAT, PROFEPA y autoridades locales. Auditorías ambientales, manifestaciones de impacto, licencias de funcionamiento y cumplimiento normativo NOM.",
+    "highlights": [
+      "Estudios de Impacto Ambiental",
+      "Licencias y Permisos ante SEMARNAT",
+      "Auditorías de Cumplimiento NOM",
+      "Gestión de Residuos Peligrosos",
+      "Reportes COA y RETC"
+    ],
+    "imageUrl": "/img/Servicios/cosafe-servicios-ambientales-sostenibilidad.png",
+    "color": "#22c55e"
+  },
+  {
+    "id": "salud",
+    "slug": "salud-medicina-trabajo",
+    "title": "Salud y Medicina del Trabajo",
+    "shortTitle": "Salud",
+    "icon": "heart-pulse",
+    "category": "Salud Ocupacional",
+    "description": "Programas integrales de medicina del trabajo: exámenes médicos pre-empleo y periódicos, vigilancia epidemiológica, integración y capacitación de comisiones de seguridad e higiene.",
+    "highlights": [
+      "Exámenes Médicos Pre-empleo y Periódicos",
+      "Vigilancia Epidemiológica",
+      "Programas de Bienestar Laboral",
+      "Comisiones de Seguridad e Higiene",
+      "IMSS y NOM-035"
+    ],
+    "imageUrl": "/img/Servicios/cosafe-servicios-salud-medicina.png",
+    "color": "#3b82f6"
+  },
+  {
+    "id": "seguridad",
+    "slug": "seguridad-personal-suministros",
+    "title": "Seguridad Personal y Suministros",
+    "shortTitle": "Seguridad",
+    "icon": "shield-check",
+    "category": "Seguridad Industrial",
+    "description": "Suministro de equipo de protección personal certificado, señalización industrial, extintores y equipos de emergencia. Asesoría en selección y uso correcto de EPP por área de riesgo.",
+    "highlights": [
+      "Equipo de Protección Personal (EPP)",
+      "Señalización NOM-026",
+      "Extintores y Sistemas Contra Incendio",
+      "Planes de Emergencia",
+      "Capacitación en Uso de EPP"
+    ],
+    "imageUrl": "/img/Servicios/cosafe-servicios-seguridad-personal-suministros.png",
+    "color": "#f59e0b"
+  },
+  {
+    "id": "capacitacion",
+    "slug": "cursos-certificaciones",
+    "title": "Cursos, Certificaciones y Estudios",
+    "shortTitle": "Capacitación",
+    "icon": "graduation-cap",
+    "category": "Formación",
+    "description": "Programas de capacitación y certificación en seguridad e higiene, protección civil, brigadas de emergencia y normatividad vigente. Certificaciones reconocidas ante STPS y secretarías locales.",
+    "highlights": [
+      "Capacitación STPS",
+      "Protección Civil",
+      "Brigadas de Emergencia",
+      "Primeros Auxilios",
+      "Cursos NOM-017, NOM-030"
+    ],
+    "imageUrl": "/img/Servicios/cosafe-servicios-cursos-certificaciones-estudios.png",
+    "color": "#a855f7"
+  },
+  {
+    "id": "industria",
+    "slug": "industria-manufactura",
+    "title": "Industria, Servicios y Manufactura",
+    "shortTitle": "Industria",
+    "icon": "factory",
+    "category": "Industrial",
+    "description": "Consultoría especializada para el sector industrial y manufactura: implementación de sistemas de gestión ISO 14001, ISO 45001, análisis de riesgos, HAZOP y cumplimiento de normativa STPS.",
+    "highlights": [
+      "ISO 14001 y ISO 45001",
+      "Análisis HAZOP y AMEF",
+      "Sistemas de Gestión Integrados",
+      "Inspecciones de Seguridad",
+      "Auditorías NOM-STPS"
+    ],
+    "imageUrl": "/img/Servicios/cosafe-servicios-industriayservicios-manufactura.png",
+    "color": "#ef4444"
+  }
+]

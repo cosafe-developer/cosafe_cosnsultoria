@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- ── Viewport: notch-safe, no auto-zoom en iOS ─────────────────────── -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- ── Favicon / Touch icons ─────────────────────────────────────────── -->
+    <link rel="icon"             type="image/svg+xml" href="/cosafe-icon.svg" />
+    <link rel="apple-touch-icon"                      href="/cosafe-icon.svg" />
+
+    <!-- ── PWA / Native feel ─────────────────────────────────────────────── -->
+    <meta name="theme-color"                    content="#01A758" />
+    <meta name="apple-mobile-web-app-capable"   content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title"     content="coSAFE" />
+    <meta name="mobile-web-app-capable"         content="yes" />
+
+    <!-- ── Prevent iOS from auto-formatting phone/email/address ──────────── -->
+    <meta name="format-detection" content="telephone=no, email=no, address=no" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         SEO — Meta primarios
+         ═══════════════════════════════════════════════════════════════════ -->
+    <title>coSAFE | Consultoría EHSS — Salud, Seguridad y Ambiente Industrial</title>
+    <meta name="description"
+          content="coSAFE Consultoría EHSS: trámites ambientales, salud ocupacional, seguridad industrial y NOMs para la industria en México. Matamoros, Tamaulipas." />
+    <meta name="keywords"
+          content="consultoría EHSS, seguridad industrial, salud ocupacional, trámites ambientales, NOMs México, STPS, SEMARNAT, Matamoros, Tamaulipas" />
+    <meta name="author"  content="coSAFE Consultoría EHSS" />
+    <meta name="robots"  content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- Idioma y región → ayuda a Google a servir en búsquedas en español MX -->
+    <link rel="alternate" hreflang="es-mx" href="https://cosafeconsultoria.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://cosafeconsultoria.com/" />
+
+    <!-- Canonical — evita penalizaciones por contenido duplicado -->
+    <link rel="canonical" href="https://cosafeconsultoria.com/" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         Open Graph — WhatsApp · LinkedIn · Facebook · iMessage
+         ═══════════════════════════════════════════════════════════════════ -->
+    <meta property="og:site_name"   content="coSAFE Consultoría EHSS" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:url"         content="https://cosafeconsultoria.com/" />
+    <meta property="og:title"       content="coSAFE | Consultoría EHSS — Salud, Seguridad y Ambiente" />
+    <meta property="og:description" content="Consultoría especializada en EHS: cumplimiento normativo, gestión ambiental y cultura de seguridad para la industria mexicana. +200 empresas atendidas." />
+    <meta property="og:locale"      content="es_MX" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         Twitter / X Card — previsualizaciones en X (Twitter)
+         ═══════════════════════════════════════════════════════════════════ -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="coSAFE | Consultoría EHSS — Salud, Seguridad y Ambiente" />
+    <meta name="twitter:description" content="Trámites ambientales, salud ocupacional y seguridad industrial para México industrial. Solicita tu diagnóstico gratuito." />
+    <meta name="twitter:site"        content="@cosafeconsultoria" />
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         JSON-LD — Schema.org LocalBusiness
+         Google lo usa para Knowledge Panel, Google Maps y rich results.
+         ═══════════════════════════════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://cosafeconsultoria.com/#business",
+      "name": "coSAFE Consultoría EHSS",
+      "alternateName": "coSAFE Consultoría",
+      "description": "Consultoría especializada en Salud, Sostenibilidad, Seguridad y Ambiente (EHSS) para la industria mexicana. Trámites ambientales, salud ocupacional, seguridad personal, cursos y certificaciones.",
+      "url": "https://cosafeconsultoria.com",
+      "telephone": "+528683546152",
+      "email": "administracion@cosafeconsultoria.com",
+      "foundingDate": "2015",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Matamoros",
+        "addressLocality": "Matamoros",
+        "addressRegion": "Tamaulipas",
+        "addressCountry": "MX"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      },
+      "knowsLanguage": "es",
+      "currenciesAccepted": "MXN",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Consultoría EHSS",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trámites y Soluciones Ambientales" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Salud y Medicina del Trabajo" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Seguridad Personal y EPP" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cursos y Certificaciones" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industria y Manufactura" } }
+        ]
+      },
+      "sameAs": [
+        "https://cosafesoft.com"
+      ]
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         GOOGLE CONSENT MODE v2 — DEBE IR ANTES QUE EL TAG DE GA4
+         ───────────────────────────────────────────────────────────────────
+         Estrategia:
+           1. Default: analytics_storage = "denied"
+              → GA carga pero NO guarda cookies ni PII.
+              → Google usa modelado estadístico (cookieless pings) para
+                estimar conversiones incluso sin consentimiento.
+
+           2. Si el usuario ya aceptó en una sesión anterior (localStorage),
+              se activa "granted" ANTES de que GA inicialice → sesión completa.
+
+           3. Si acepta en el banner actual, PrivacyBanner.jsx llama a
+              gtag('consent','update', {analytics_storage:'granted'})
+              → GA cambia de modo sin recargar la página.
+
+         Esto cumple: GDPR Art.7, ePrivacy Directive, IAB TCF v2.2 y los
+         requisitos de Consent Mode v2 de Google (marzo 2024).
+         ═══════════════════════════════════════════════════════════════════ -->
+    <script>
+      // Inicializar dataLayer y gtag helper
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+
+      // Paso 1 — Consent por defecto: todo denegado
+      gtag('consent', 'default', {
+        'analytics_storage':   'denied',
+        'ad_storage':          'denied',
+        'ad_user_data':        'denied',
+        'ad_personalization':  'denied',
+        'wait_for_update': 400         // ms que GA espera antes de disparar hits
+      });
+
+      // Paso 2 — Si ya consintió en sesión anterior, restaurar inmediatamente
+      try {
+        if (localStorage.getItem('cosafe_privacy_accepted') === '1') {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        }
+      } catch(e) { /* localStorage bloqueado — continúa en modo denegado */ }
+    </script>
+
+    <!-- GA4 — carga asíncrona, no bloquea render -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H69B5KN36G"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G-H69B5KN36G', {
+        // Anonimizar IP (buena práctica, requerido bajo GDPR si analytics_storage=granted)
+        'anonymize_ip': true,
+        // No enviar page_view automático — lo manejamos via React Router
+        'send_page_view': false
+      });
+    </script>
+
+    <!-- ═══════════════════════════════════════════════════════════════════
+         Fuentes (Google Fonts — tercer partido; informado en Aviso de Privacidad)
+         preconnect mejora LCP en ~200-400ms
+         ═══════════════════════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preconnect para GA (mejora TTFB del script de analytics) -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-ink-body antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
