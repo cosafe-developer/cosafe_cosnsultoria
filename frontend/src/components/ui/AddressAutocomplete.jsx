@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { MapPin, X, Loader2, AlertCircle } from "lucide-react";
 import { useGoogleMaps } from "../../hooks/useGoogleMaps.js";
 
-const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY ?? "";
 
 /**
  * Input de dirección con Google Places Autocomplete.
@@ -33,7 +33,30 @@ export default function AddressAutocomplete({
 
   useEffect(() => { onSelectRef.current = onSelect; }, [onSelect]);
 
-  const { isLoaded, loadError } = useGoogleMaps(API_KEY);
+  const hasApiKey = Boolean(API_KEY);
+  const { isLoaded, loadError } = useGoogleMaps(hasApiKey ? API_KEY : null);
+
+  // Sin API key: input de texto simple, sin autocompletado
+  if (!hasApiKey) {
+    return (
+      <div className="relative">
+        <div className="absolute inset-y-0 left-3.5 flex items-center pointer-events-none">
+          <MapPin size={15} className="text-ink-mid" />
+        </div>
+        <input
+          type="text"
+          placeholder="Escribe la dirección de tu empresa o instalación"
+          className={`input-field pl-9 ${className}`}
+          onChange={(e) =>
+            onSelect?.({
+              formatted_address: e.target.value,
+              lat: null, lng: null, components: [],
+            })
+          }
+        />
+      </div>
+    );
+  }
 
   // Sincroniza el input con el estado del padre (reset de formulario, etc.)
   useEffect(() => {

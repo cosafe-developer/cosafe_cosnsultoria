@@ -31,6 +31,9 @@ export function useGoogleMaps(apiKey, libraries = ["places"]) {
   const [loadError, setLoadError] = useState(null);
 
   useEffect(() => {
+    // Sin API key: no intentar cargar nada
+    if (!apiKey) return;
+
     // Ya disponible (ej: Hot Reload en dev)
     if (window.google?.maps?.places) {
       setIsLoaded(true);
