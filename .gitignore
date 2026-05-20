@@ -14,3 +14,7 @@ Thumbs.db
 # Temp
 *.tmp
 *.bak
+node_modules/
+package-lock.json
+screenshots/
+.claude/settings.json
