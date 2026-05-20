@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(if \\(Test-Path \"C:\\\\Cosafe.zip\"\\) { Write-Host \"ZIP existe, tamano: $\\(\\(Get-Item 'C:\\\\Cosafe.zip'\\).Length\\) bytes\" } else { Write-Host \"ZIP NO ENCONTRADO\" })",
+      "Bash(git remote *)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(ssh-keyscan github.com >> ~/.ssh/known_hosts 2>&1 && echo \"OK\" && ssh -T git@github.com 2>&1 || true)",
+      "Bash(mkdir -p ~/.ssh)",
+      "Bash(chmod 700 ~/.ssh)",
+      "Bash(ssh-keyscan github.com)",
+      "Bash(ssh-add -l)",
+      "PowerShell(Get-ChildItem \"$env:USERPROFILE\\\\.ssh\\\\\" -Force -ErrorAction SilentlyContinue | Select-Object Name, Length)",
+      "Bash(gh auth *)",
+      "PowerShell(Get-Service ssh-agent -ErrorAction SilentlyContinue)",
+      "Bash(find /c/Users/RAMSESJAREDGARCIATRE -name \"id_rsa\" -o -name \"id_ed25519\" -o -name \"id_ecdsa\" -o -name \"*.pem\" 2>/dev/null | head -20)",
+      "Read(//c/Users/RAMSESJAREDGARCIATRE/**)",
+      "Bash(git config *)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\RAMSESJAREDGARCIATRE\\.ssh"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1630px; /* Ajusta el ancho máximo según tus necesidades */
+    height: 100px; /* Altura específica */
+    margin: 0 auto;
+  }
+  
+  .carousel-track {
+    display: flex;
+    width: calc(100% + 48px); /* Añade espacio para la separación entre imágenes */
+    animation: scroll 20s linear infinite; /* Ajusta la duración de la animación */
+  }
+  
+  .carousel-img {
+    height: 100%; /* Las imágenes ocuparán la altura completa del carrusel */
+    width: auto; /* El ancho se ajustará automáticamente según la proporción */
+    margin-right: 48px; /* Separación entre imágenes */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Mueve las imágenes horizontalmente */
+    }
+  }
+  
