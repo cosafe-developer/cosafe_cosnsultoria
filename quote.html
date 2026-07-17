@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Cotización EHS | CoSAFE Consultoría</title>
+    <meta name="description" content="Cotiza servicios de Protección Civil, salud ocupacional, estudios, EPP y extintores mediante un formulario dinámico.">
+    <link href="img/cosafe-consultoria-ehss.png" rel="icon" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet">
+</head>
+<body class="quote-page">
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+    <div class="container-fluid bg-dark px-0" role="region" aria-label="Información de contacto"><div class="row g-0 d-none d-lg-flex"><div class="col-lg-6 ps-5"><div class="h-100 d-inline-flex align-items-center text-white topbar-kicker">Consultoría EHSS industrial</div></div><div class="col-lg-6 text-end"><div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5"><a href="tel:+528683546152" class="fw-bold text-white"><i class="fa fa-phone-alt me-2"></i>+52 868 354 6152</a></div></div></div></div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5" aria-label="Navegación principal">
+        <a class="navbar-brand ps-5 me-0" href="index.html"><img src="img/cosafe-consultoria-ehss.png" width="167" height="63" alt="CoSAFE Consultoría EHSS"></a>
+        <button class="navbar-toggler me-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarCollapse"><div class="navbar-nav ms-auto p-4 p-lg-0"><a href="index.html" class="nav-item nav-link">Inicio</a><a href="about.html" class="nav-item nav-link">Acerca de</a><a href="service.html" class="nav-item nav-link">Servicios</a><a href="quote.html" class="nav-item nav-link active" aria-current="page">Cotizar</a><a href="contact.html" class="nav-item nav-link">Contacto</a></div><a href="tel:+528683546152" class="btn btn-outline-primary px-3 d-none d-lg-inline-flex">Llamar a CoSAFE</a></div>
+    </nav>
+
+    <main id="main-content" tabindex="-1">
+        <header class="quote-hero"><div class="container"><p class="section-code">COTIZADOR / SOLICITUD GUIADA</p><h1>Solicita una cotización</h1><p>Selecciona el servicio y proporciona la información disponible. No es necesario tener todos los datos; los campos cambian según el servicio.</p></div></header>
+        <div class="quote-shell container">
+            <aside class="quote-progress" aria-label="Progreso de la cotización"><p>Avance de solicitud</p><ol id="quoteProgress"><li class="is-active"><span>01</span>Contacto</li><li><span>02</span>Categoría</li><li><span>03</span>Servicio</li><li><span>04</span>Alcance</li><li><span>05</span>Archivos</li><li><span>06</span>Fechas</li><li><span>07</span>Resumen</li><li><span>08</span>Confirmación</li></ol><div class="quote-save-status" role="status" aria-live="polite"></div></aside>
+            <form id="quoteForm" class="quote-form" novalidate>
+                <section class="quote-step is-active" data-step="1" aria-labelledby="step1-title">
+                    <p class="section-code">PASO 01 / 08</p><h2 id="step1-title">Datos de contacto</h2><p class="step-intro">Usaremos estos datos únicamente para revisar y responder la solicitud.</p>
+                    <div class="form-grid">
+                        <div><label for="q-name">Nombre completo *</label><input class="form-control" id="q-name" name="nombre" autocomplete="name" required></div>
+                        <div><label for="q-role">Puesto</label><input class="form-control" id="q-role" name="puesto" autocomplete="organization-title"></div>
+                        <div><label for="q-company">Empresa *</label><input class="form-control" id="q-company" name="empresa" autocomplete="organization" required></div>
+                        <div><label for="q-phone">Teléfono de 10 dígitos *</label><input class="form-control" id="q-phone" name="telefono" type="tel" inputmode="numeric" pattern="[0-9]{10}" autocomplete="tel-national" required></div>
+                        <div><label for="q-email">Correo *</label><input class="form-control" id="q-email" name="correo" type="email" autocomplete="email" required></div>
+                        <div><label for="q-channel">Contacto preferido</label><select class="form-select" id="q-channel" name="contacto_preferido"><option>Correo</option><option>Teléfono</option><option>WhatsApp</option></select></div>
+                        <div><label for="q-country">País *</label><select class="form-select" id="q-country" name="pais" required><option value="">Selecciona</option><option>México</option><option>Estados Unidos</option><option>Otro</option></select></div>
+                        <div><label for="q-state">Estado o provincia *</label><input class="form-control" id="q-state" name="estado" autocomplete="address-level1" required></div>
+                        <div><label for="q-city">Ciudad *</label><input class="form-control" id="q-city" name="ciudad" autocomplete="address-level2" required></div>
+                        <div class="form-grid__wide"><label for="q-address">Dirección del servicio</label><input class="form-control" id="q-address" name="direccion_servicio" autocomplete="street-address"></div>
+                        <div><label for="q-same-address">¿Misma dirección fiscal?</label><select class="form-select" id="q-same-address" name="misma_direccion"><option>No estoy seguro</option><option>Sí</option><option>No</option></select></div>
+                        <div><label for="q-contact-time">Horario de contacto</label><input class="form-control" id="q-contact-time" name="horario_contacto" placeholder="Ej. 09:00–13:00"></div>
+                    </div>
+                    <label class="consent-row"><input type="checkbox" name="privacidad" required> <span>Acepto que mis datos se utilicen para atender esta solicitud. *</span></label>
+                </section>
+
+                <section class="quote-step" data-step="2" aria-labelledby="step2-title" hidden>
+                    <p class="section-code">PASO 02 / 08</p><h2 id="step2-title">Selecciona una categoría</h2><p class="step-intro">Seis líneas EHSS principales, un acceso transversal y dos servicios complementarios.</p>
+                    <div class="category-options" id="categoryOptions">
+                        <label><input type="radio" name="categoria" value="proteccion-civil" required><span><small>EHSS 01</small><strong>Protección Civil y trámites</strong><em>Programas, dictámenes, permisos y seguimiento.</em></span></label>
+                        <label><input type="radio" name="categoria" value="seguridad-industrial"><span><small>EHSS 02</small><strong>Seguridad Industrial y Estudios Técnicos</strong><em>Evaluaciones, estudios, dictámenes y auditoría.</em></span></label>
+                        <label><input type="radio" name="categoria" value="ambiental"><span><small>EHSS 03</small><strong>Estudios y Cumplimiento Ambiental</strong><em>Diagnóstico, gestión, regularización y expedientes.</em></span></label>
+                        <label><input type="radio" name="categoria" value="salud"><span><small>EHSS 04</small><strong>Salud Ocupacional y Servicios Médicos</strong><em>Atención en planta, exámenes y prevención.</em></span></label>
+                        <label><input type="radio" name="categoria" value="epp"><span><small>EHSS 05</small><strong>Equipo de Protección Personal</strong><em>Venta, selección y suministro recurrente.</em></span></label>
+                        <label><input type="radio" name="categoria" value="extintores"><span><small>EHSS 06</small><strong>Extintores y Protección Contra Incendios</strong><em>Asesoría, venta, recarga, mantenimiento e inspección.</em></span></label>
+                        <label><input type="radio" name="categoria" value="tramites"><span><small>TRANSVERSAL</small><strong>Trámites municipales y estatales</strong><em>Clasificaremos internamente la autoridad y categoría.</em></span></label>
+                        <label><input type="radio" name="categoria" value="capacitacion"><span><small>COMPLEMENTARIO</small><strong>Cursos y Capacitaciones</strong><em>Servicios únicos, grupos y programas anuales.</em></span></label>
+                        <label><input type="radio" name="categoria" value="intendencia"><span><small>COMPLEMENTARIO</small><strong>Intendencia y Suministros</strong><em>Personal, cobertura y consumibles.</em></span></label>
+                        <label><input type="radio" name="categoria" value="no-seguro"><span><small>AYUDA</small><strong>No estoy seguro</strong><em>Describe tu necesidad y CoSAFE la clasificará.</em></span></label>
+                    </div>
+                </section>
+
+                <section class="quote-step" data-step="3" aria-labelledby="step3-title" hidden><p class="section-code">PASO 03 / 08</p><h2 id="step3-title">Selecciona uno o varios servicios</h2><p class="step-intro">Puedes combinar opciones o marcar “Otro”.</p><div id="microServices" class="micro-options"></div><label class="option-inline"><input type="checkbox" name="servicio_recurrente"> Servicio recurrente</label><label class="option-inline"><input type="checkbox" name="varias_ubicaciones"> Duplicar o aplicar para otra ubicación</label></section>
+
+                <section class="quote-step" data-step="4" aria-labelledby="step4-title" hidden><p class="section-code">PASO 04 / 08</p><h2 id="step4-title">Datos específicos del alcance</h2><p class="step-intro">Completa lo que tengas disponible. Los campos corresponden a la categoría seleccionada.</p><div id="conditionalFields" class="form-grid"></div><div><label for="q-notes">Observaciones adicionales</label><textarea class="form-control" id="q-notes" name="observaciones" rows="5"></textarea></div></section>
+
+                <section class="quote-step" data-step="5" aria-labelledby="step5-title" hidden><p class="section-code">PASO 05 / 08</p><h2 id="step5-title">Documentos y evidencias</h2><p class="step-intro">PDF, JPG, PNG, XLSX o DOCX. Máximo 20 MB por archivo y 10 archivos.</p><label class="file-drop" for="q-files"><i class="bi bi-paperclip"></i><strong>Seleccionar archivos</strong><span>Fotografías, planos, programa anterior, inventarios o requerimientos.</span></label><input class="visually-hidden" id="q-files" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,.xlsx,.docx"><ul id="fileList" class="file-list" aria-live="polite"></ul></section>
+
+                <section class="quote-step" data-step="6" aria-labelledby="step6-title" hidden><p class="section-code">PASO 06 / 08</p><h2 id="step6-title">Urgencia y fechas</h2><div class="form-grid"><div><label for="q-date">Fecha requerida</label><input class="form-control" id="q-date" name="fecha_requerida" type="date"></div><div><label for="q-official">¿Existe fecha límite oficial?</label><select class="form-select" id="q-official" name="fecha_oficial"><option>No</option><option>Sí</option><option>No estoy seguro</option></select></div><div><label for="q-urgency">Tipo de urgencia</label><select class="form-select" id="q-urgency" name="urgencia"><option>Sin urgencia</option><option>Dentro de 30 días</option><option>Dentro de 15 días</option><option>Dentro de 7 días</option><option>Urgente</option></select></div><div><label for="q-date-reason">Motivo de la fecha</label><input class="form-control" id="q-date-reason" name="motivo_fecha"></div></div><div class="notice-box"><i class="bi bi-info-circle"></i><p>Las fechas están sujetas a revisión de alcance, disponibilidad, documentación y participación de terceros.</p></div></section>
+
+                <section class="quote-step" data-step="7" aria-labelledby="step7-title" hidden><p class="section-code">PASO 07 / 08</p><h2 id="step7-title">Revisa tu solicitud</h2><div id="quoteSummary" class="quote-summary"></div><div class="notice-box"><i class="bi bi-cash-stack"></i><p>Precio sujeto a revisión de alcance cuando dependa de visita, documentos, autoridad, especialista, viáticos o condiciones no confirmadas.</p></div></section>
+
+                <section class="quote-step quote-confirmation" data-step="8" aria-labelledby="step8-title" hidden><i class="bi bi-check2-circle"></i><p class="section-code">SOLICITUD REGISTRADA</p><h2 id="step8-title">Recibimos tu solicitud</h2><p>La cotización final puede requerir una llamada, documentos adicionales o una visita al sitio.</p><dl><div><dt>Folio</dt><dd id="quoteFolio">—</dd></div><div><dt>Fecha</dt><dd id="quoteDate">—</dd></div><div><dt>Contacto</dt><dd id="quoteChannel">—</dd></div></dl><p>Conserva tu folio para futuras aclaraciones.</p><button class="btn btn-outline-dark" id="restartQuote" type="button">Iniciar otra cotización</button></section>
+
+                <div class="quote-actions" id="quoteActions"><button class="btn btn-outline-dark" id="prevStep" type="button" hidden>Anterior</button><button class="btn btn-outline-primary" id="saveDraft" type="button">Guardar borrador</button><button class="btn btn-primary" id="nextStep" type="button">Continuar</button></div>
+                <div class="form-error" id="formError" role="alert" tabindex="-1"></div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-dark footer py-5"><div class="container py-4"><div class="row g-5"><div class="col-lg-4 col-md-6"><img class="footer-logo" src="img/cosafe-consultoria-ehss.png" alt="CoSAFE Consultoría" width="167" height="63"><p class="mt-4">Soluciones EHSS para la industria maquiladora y de servicios desde 2016.</p></div><div class="col-lg-2 col-md-6"><h2 class="h5 text-white mb-4">Accesos</h2><a class="btn btn-link" href="index.html">Inicio</a><a class="btn btn-link" href="about.html">Acerca de</a><a class="btn btn-link" href="service.html">Servicios</a><a class="btn btn-link" href="contact.html">Contacto</a></div><div class="col-lg-3 col-md-6"><h2 class="h5 text-white mb-4">Servicios</h2><a class="btn btn-link" href="service.html#proteccion-civil">Protección Civil</a><a class="btn btn-link" href="service.html#salud">Salud ocupacional</a><a class="btn btn-link" href="service.html#ambiental">Estudios ambientales</a><a class="btn btn-link" href="service.html#extintores">Extintores y EPP</a></div><div class="col-lg-3 col-md-6"><h2 class="h5 text-white mb-4">Contacto</h2><p>Mezquite 43, Las Arboledas<br>Heroica Matamoros, Tamaulipas</p><a href="tel:+528683546152">+52 868 354 6152</a><br><a href="mailto:gerencias@cosafeconsultoria.com">gerencias@cosafeconsultoria.com</a><p class="small mt-3">Horario pendiente de confirmar.</p></div></div></div></footer>
+    <div class="container-fluid copyright bg-dark py-4"><div class="container text-center"><p class="mb-0">© <span data-current-year>2026</span> CoSAFE Consultoría. Todos los derechos reservados.</p></div></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script><script src="js/catalog.js"></script><script src="js/main.js"></script><script src="js/quote.js"></script>
+</body>
+</html>

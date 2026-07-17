@@ -1,678 +1,219 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="es-MX">
 <head>
     <meta charset="utf-8">
-    <title>coSAFE | Soluciones en Salud, Sostenibilidad, Seguridad y Ambiente</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoSAFE Consultoría | Soluciones EHSS en México y Estados Unidos</title>
+    <meta name="description" content="Servicios EHSS para la industria: Protección Civil, salud ocupacional, medio ambiente, capacitación, estudios técnicos, EPP, extintores e intendencia.">
     <link href="img/cosafe-consultoria-ehss.png" rel="icon" type="image/png">
-
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">  
-    <link rel="stylesheet" href="css/moverimg.css">
-    <link rel="stylesheet" href="css/whatsaap.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/whatsaap.css" rel="stylesheet">
 </head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+<body class="home-page">
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Cargando</span></div>
     </div>
-    <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-         <div class="row g-0 d-none d-lg-flex">
-             <div class="col-lg-6 ps-5 text-start">
-                 <div class="h-100 d-inline-flex align-items-center text-white">
-                     <span class="ms-2">Follow Us:</span>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                     
-                 </div>
-
-                 
-             </div>
-
-             
-             <div class="col-lg-6 text-end" >
-                
-                <img src="img/flag-mx.png.png" alt="MX Flag">
-                <span style="margin-right: 20px;"></span>
-                <img src="img/flag-us.png.png" alt="US Flag">
-                <span style="margin-right: 50px;"></span>
-
-                 <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
-                     <a href="tel:+528683546152" class="fs-5 fw-bold me-2" style="color: white;">
-                         <i class="fa fa-phone-alt me-2"></i>Llamanos:</a>
-                     <a href="tel:+528683546152" class="fs-5 fw-bold" style="color: white;">+52 868 354 6152</a>
-                 </div>
-             </div>
-         </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <div class="navbar-brand ps-5 me-0">
-            <div>
-                <img src="img/cosafe-consultoria-ehss.png" width="167" height="63">
+    <div class="container-fluid bg-dark px-0" role="region" aria-label="Información de contacto">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center gap-3 text-white topbar-kicker">
+                    <span>Consultoría EHSS industrial</span>
+                    <span class="topbar-flags d-inline-flex gap-2" aria-label="Atención en México y Estados Unidos">
+                        <img src="img/flag-mx.png.png" alt=""><img src="img/flag-us.png.png" alt="">
+                    </span>
+                </div>
             </div>
-
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <a href="tel:+528683546152" class="fs-6 fw-bold text-white"><i class="fa fa-phone-alt me-2" aria-hidden="true"></i>+52 868 354 6152</a>
+                </div>
+            </div>
         </div>
+    </div>
 
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5" aria-label="Navegación principal">
+        <a class="navbar-brand ps-5 me-0" href="index.html" aria-label="CoSAFE Consultoría, ir al inicio">
+            <img src="img/cosafe-consultoria-ehss.png" width="167" height="63" alt="CoSAFE Consultoría EHSS">
         </a>
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler me-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Abrir menú de navegación"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="index.html" class="nav-item nav-link active" aria-current="page">Inicio</a>
                 <a href="about.html" class="nav-item nav-link">Acerca de</a>
                 <a href="service.html" class="nav-item nav-link">Servicios</a>
-                <a href="team.html" class="nav-item nav-link">Blog</a>
+                <a href="quote.html" class="nav-item nav-link">Cotizar</a>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="" class="btn btn-primary px-3 d-none d-lg-block">Cotizar</a>
+            <a href="quote.html" class="btn btn-primary px-3 d-none d-lg-inline-flex align-items-center">Solicitar cotización</a>
+            <div class="d-grid gap-2 mx-4 mb-4 d-lg-none">
+                <a href="quote.html" class="btn btn-primary">Solicitar cotización</a>
+                <a href="tel:+528683546152" class="btn btn-outline-primary">Llamar</a>
+                <a href="mailto:gerencias@cosafeconsultoria.com" class="btn btn-outline-dark">Enviar correo</a>
+            </div>
         </div>
     </nav>
-    <!-- Navbar End -->
 
-
-    <!-- Carousel Start -->
-    <div class="container-fluid px-0 mb-5">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.png" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">8 AÑOS
-                                        FORJANDO  EXCELENCIA Y SEGURIDAD</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Brindamos servicios de 
-                                        EHSS en todas las industrias</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Conocer Mas</a>
-                                </div>
-                            </div>
-                        </div>
+    <main id="main-content" tabindex="-1">
+        <section class="industrial-hero" aria-labelledby="hero-title">
+            <img class="industrial-hero__image" src="img/carousel-1.png" alt="Equipo CoSAFE en una operación industrial" width="1920" height="1080">
+            <div class="industrial-hero__scrim" aria-hidden="true"></div>
+            <div class="container industrial-hero__content">
+                <div class="industrial-hero__copy" data-reveal>
+                    <p class="section-code">EHSS / MÉXICO + ESTADOS UNIDOS</p>
+                    <h1 id="hero-title">Soluciones EHSS para la industria maquiladora y de servicios</h1>
+                    <p class="industrial-hero__lead">Desde 2016, CoSAFE ayuda a empresas a resolver necesidades de seguridad, salud ocupacional, medio ambiente y operación industrial.</p>
+                    <div class="hero-actions">
+                        <a href="quote.html" class="btn btn-primary btn-lg">Solicitar cotización <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#servicios" class="btn btn-outline-light btn-lg">Explorar servicios</a>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.PNG" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-start">
-                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">
-                                        MEJORANDO LA OPERATIVIDAD</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Soluciones Integrales
-                                        más allá de los Límites</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInRight">Conocer Mas</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <aside class="hero-scope" aria-label="Alcance de CoSAFE" data-reveal data-reveal-delay="1">
+                    <span class="hero-scope__status"><i aria-hidden="true"></i> Operación activa desde 2016</span>
+                    <dl>
+                        <div><dt>08</dt><dd>categorías de servicio</dd></div>
+                        <div><dt>EHSS</dt><dd>seguridad, salud y ambiente</dd></div>
+                        <div><dt>MX / US</dt><dd>cobertura sujeta a alcance</dd></div>
+                    </dl>
+                </aside>
+            </div>
+            <a class="hero-scroll" href="#servicios" aria-label="Ir a servicios"><span>Explorar</span><i class="bi bi-arrow-down" aria-hidden="true"></i></a>
+        </section>
+
+        <section class="section-shell services-overview" id="servicios" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <div><p class="section-code">01 / CAPACIDADES</p><h2 id="services-title">Servicios para la operación diaria y el cumplimiento de tu empresa</h2></div>
+                    <p>No todas las empresas requieren lo mismo. Definimos el alcance según giro, ubicación, personal, inmueble y condiciones del sitio.</p>
+                </div>
+                <div class="capability-grid">
+                    <a class="capability-card" href="service.html#ambiental" data-reveal><span>01</span><i class="fa fa-leaf" aria-hidden="true"></i><h3>Trámites y asesoría ambiental</h3><p>Gestión documental, diagnósticos y seguimiento de necesidades ambientales.</p><strong>Ver servicios <i class="bi bi-arrow-up-right"></i></strong></a>
+                    <a class="capability-card" href="service.html#capacitacion" data-reveal><span>02</span><i class="fa fa-chalkboard-teacher" aria-hidden="true"></i><h3>Cursos y capacitaciones</h3><p>Formación para personal operativo, mandos y brigadas con respaldo documental.</p><strong>Ver servicios <i class="bi bi-arrow-up-right"></i></strong></a>
+                    <a class="capability-card" href="service.html#estudios" data-reveal><span>03</span><i class="fa fa-clipboard-check" aria-hidden="true"></i><h3>Estudios técnicos</h3><p>Evaluaciones y diagnósticos sobre seguridad y requisitos aplicables.</p><strong>Ver servicios <i class="bi bi-arrow-up-right"></i></strong></a>
+                    <a class="capability-card" href="service.html#salud" data-reveal><span>04</span><i class="fa fa-user-md" aria-hidden="true"></i><h3>Salud ocupacional</h3><p>Servicio médico y de enfermería, exámenes, campañas y atención preventiva.</p><strong>Ver servicios <i class="bi bi-arrow-up-right"></i></strong></a>
+                    <a class="capability-card" href="service.html#proteccion-civil" data-reveal><span>05</span><i class="fa fa-hard-hat" aria-hidden="true"></i><h3>Protección Civil</h3><p>Programas internos, simulacros, dictámenes y seguimiento de trámites.</p><strong>Ver servicios <i class="bi bi-arrow-up-right"></i></strong></a>
+                    <a class="capability-card" href="service.html#epp" data-reveal><span>06</span><i class="fa fa-shield-alt" aria-hidden="true"></i><h3>Equipo de protección personal</h3><p>Asesoría, venta y suministro de acuerdo con actividad, riesgo y consumo.</p><strong>Ver servicios <i class="bi bi-arrow-up-right"></i></strong></a>
+                    <a class="capability-card" href="service.html#extintores" data-reveal><span>07</span><i class="fa fa-fire-extinguisher" aria-hidden="true"></i><h3>Extintores</h3><p>Venta, recarga, mantenimiento, inspección y programas recurrentes.</p><strong>Ver servicios <i class="bi bi-arrow-up-right"></i></strong></a>
+                    <a class="capability-card" href="service.html#intendencia" data-reveal><span>08</span><i class="fa fa-people-carry" aria-hidden="true"></i><h3>Intendencia y suministros</h3><p>Personal por turno o periodo y suministros asociados al servicio.</p><strong>Ver servicios <i class="bi bi-arrow-up-right"></i></strong></a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-    <!-- Carousel End -->
+        </section>
 
+        <section class="experience-sectors" aria-labelledby="sectors-title">
+            <div class="container">
+                <div class="experience-marker" data-reveal><span>DESDE</span><strong>2016</strong><p>Atendiendo necesidades de la industria maquiladora y de servicios.</p></div>
+                <div data-reveal><p class="section-code">EXPERIENCIA / SECTORES</p><h2 id="sectors-title">Soluciones para distintos tipos de operación</h2><ul class="sector-list"><li>Industria maquiladora</li><li>Manufactura</li><li>Logística y almacenes</li><li>Empresas de servicios</li><li>Oficinas corporativas</li><li>Comercios y centros de trabajo</li><li>Contratistas y proveedores industriales</li><li>Operaciones en México y Estados Unidos</li></ul></div>
+            </div>
+        </section>
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="row gx-3 h-100">
-                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-1.jpg">
-                        </div>
-                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
-                            <img class="img-fluid" src="img/about-2.jpg">
-                        </div>
-                    </div>
+        <section class="section-shell scope-section" aria-labelledby="scope-title">
+            <div class="container scope-layout">
+                <div class="scope-visual" data-reveal>
+                    <img src="img/feature.jpg" alt="Supervisión técnica de seguridad en una operación industrial" width="900" height="900" loading="lazy">
+                    <div class="scope-stamp"><span>ALCANCE</span><strong>Claro</strong><small>antes de cotizar</small></div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="fw-medium text-uppercase text-primary mb-2">ACERCA DE</p>
-                    <h1 class="display-5 mb-4">Empoderando industrias: su socio EHSS por excelencia</h1>
-                    <p class="mb-4">Fundada en 2016, lidera la industria maquiladora y de servicios en seguridad, salud
-                        y medio ambiente.
-                        Ofrecemos soluciones integrales e innovadoras en gestión industrial, garantizando la excelencia
-                        y la operabilidad. basado en la seguridad,
-                        la salud y el bienestar de colaboradores, clientes y comunidades, guiados por valores de
-                        excelencia, innovación, responsabilidad social y ética.
-                    </p>
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="hexagon-container" style="text-align: center;">
-                            <h2 style="margin: -20px 0 -10px 0;">
-                                <span style="color: #02245b; font-size: 2em;">8</span>
-                            </h2>
-                            <h5 class="hexagon-text" style="margin-bottom: 2px;">Años de</h5>
-                            <h5 class="hexagon-text" style="margin: 0;">Experiencia</h5>
-                        </div>
-                        <div class="ms-4">
-                            <p><i class="fa fa-check text-primary me-2"></i>Trámites y Asesoría Ambiental</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Cursos y Capacitaciones con aval de la STPS</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Estudios Técnicos respaldados</p>
-                            <p><i class="fa fa-check text-primary me-2"></i>Soluciones Corporativas, Industriales y de Servicios</p>
-                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Proveemos Personal de Intendencia y suministramos</p>
-                        </div>
-                    </div>
-                
-                        
-                           
+                <div class="scope-copy" data-reveal>
+                    <p class="section-code">02 / QUÉ PODEMOS ATENDER</p>
+                    <h2 id="scope-title">Una necesidad puntual o un servicio recurrente</h2>
+                    <p>Podemos apoyar desde una recarga de extintores hasta enfermería industrial en planta o seguimiento de trámites. Cada propuesta parte de información real.</p>
+                    <ul class="technical-list">
+                        <li><span>01</span>Revisión inicial de la necesidad</li>
+                        <li><span>02</span>Definición del alcance y entregables</li>
+                        <li><span>03</span>Documentos, evidencias y visita cuando aplica</li>
+                        <li><span>04</span>Cotización por servicio, volumen o periodicidad</li>
+                        <li><span>05</span>Seguimiento hasta el cierre documentado</li>
+                    </ul>
+                    <a class="text-link" href="quote.html">Describir mi necesidad <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- About End -->
+        </section>
 
-
-
-  
-
-
-   
-
-    <!-- Facts Start -->
-
-    <div align="center" class="container-fluid facts my-5 p-5">
-        
-<div style="margin: 20px;">
-    <h1 class="display-5 text-white">Con La Confianza De Diversas </h1>
-    <h1 class="display-5 text-white">Organizaciones Publicas y Privadas</h1>
-</div>
-
-
-            <div class="carousel-container">
-                <div class="carousel-track">
-                  <img src="img/Aliados/semarnat-logo.png" alt="Imagen 1">
-                  <img src="img/Aliados/dhs-logo.png" alt="Imagen 2">
-                  <img src="img/Aliados/cosafe-Desarrollo-Urbano-y-Medio-Ambiente.png" alt="Imagen 3">
-                  <img src="img/Aliados/iso-logo.png" alt="Imagen 1">
-                  <img src="img/Aliados/sat-logo.png" alt="Imagen 2">
-                  <img src="img/Aliados/orozcolab-logo.png" alt="Imagen 3">
-                  <img src="img/Aliados/agroquimicos-logo.png" alt="Imagen 3">
-                  <img src="img/Aliados/cosafeconsultoria-Index-cosafe.png" alt="Imagen 3">
-                  <!-- Repite las imágenes para lograr el efecto infinito -->
-                  <img src="img/Aliados/semarnat-logo.png" alt="Imagen 1">
-                  <img src="img/Aliados/dhs-logo.png" alt="Imagen 2">
-                  <img src="img/Aliados/cosafe-Desarrollo-Urbano-y-Medio-Ambiente.png" alt="Imagen 3">
-                  <img src="img/Aliados/iso-logo.png" alt="Imagen 1">
-                  <img src="img/Aliados/sat-logo.png" alt="Imagen 2">
-                  <img src="img/Aliados/orozcolab-logo.png" alt="Imagen 3">
-                  <img src="img/Aliados/agroquimicos-logo.png" alt="Imagen 3">
-                  <img src="img/Aliados/cosafeconsultoria-Index-cosafe.png" alt="Imagen 3">
+        <section class="section-shell featured-services" aria-labelledby="featured-title">
+            <div class="container">
+                <div class="section-heading" data-reveal>
+                    <div><p class="section-code">03 / SERVICIOS DESTACADOS</p><h2 id="featured-title">Frentes críticos de una operación industrial</h2></div>
+                    <a href="service.html" class="text-link">Ver catálogo completo <i class="bi bi-arrow-right"></i></a>
                 </div>
-              </div>
-            
-       
-    </div>
-    <!-- Facts End -->
-
-
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative me-lg-4">
-                        <img class="img-fluid w-100" src="img/feature.jpg" alt="">
-                        <span
-                            class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
-                            style="width: 120px; height: 120px;"></span>
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="fw-medium text-uppercase text-primary mb-2">POR QUE ELEGIRNOS!</p>
-                    <h1 class="display-5 mb-4">¡Descubre Por Qué Somos Tu Elección En EHSS!</h1>
-                    <p class="mb-4">Líderes comprometidos con tu seguridad, salud y bienestar,
-                         así como con el cuidado del medio ambiente. En la industria maquiladora y de servicios, 
-                         marcamos la diferencia. Nuestra misión y visión son el motor que impulsa nuestra excelencia 
-                         en cada proyecto. 
-                    </p>
-                    <div class="row gy-4">
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-check text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h4>Vanguardia de la Seguridad</h4>
-                                    <span>Nuestra firme dedicación a la seguridad, salud y bienestar. 
-                                        Con vasta experiencia en la industria maquiladora y de servicios</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-check text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h4>Soluciones para un Futuro Sostenible</h4>
-                                    <span>Afrontamos los retos cambiantes de EHSS con innovación 
-                                        de avanzadas tecnologías, 
-                                        allanando el camino a un futuro más seguro y sostenible</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-check text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h4>Fuerza que Impulsa la Excelencia</h4>
-                                    <span>Nuestra misión de seguridad y bienestar, junto a la visión global EHSS,
-                                         cimientan nuestra labor. en cada paso que damos es un paso hacia la excelencia y calidad</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="featured-grid">
+                    <article class="featured-card featured-card--large" data-reveal><img src="img/service-1.jpg" alt="Atención médica ocupacional en planta" loading="lazy"><div><p>Salud ocupacional</p><h3>Servicio médico y enfermería en planta</h3><span>Atención laboral, incapacidades, campañas de salud y control preventivo.</span><a href="quote.html?category=salud">Cotizar servicio <i class="bi bi-arrow-right"></i></a></div></article>
+                    <article class="featured-card" data-reveal><img src="img/service-2.jpg" alt="Extintores inspeccionados en una instalación" loading="lazy"><div><p>Protección activa</p><h3>Venta, recarga y mantenimiento de extintores</h3><a href="quote.html?category=extintores">Cotizar extintores <i class="bi bi-arrow-right"></i></a></div></article>
+                    <article class="featured-card" data-reveal><img src="img/service-3.jpg" alt="Revisión documental de Protección Civil" loading="lazy"><div><p>Cumplimiento</p><h3>Protección Civil y trámites</h3><a href="quote.html?category=proteccion-civil">Cotizar trámite <i class="bi bi-arrow-right"></i></a></div></article>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Features End -->
+        </section>
 
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <section class="section-shell process-section" aria-labelledby="process-title">
+            <div class="container">
+                <div class="section-heading section-heading--light" data-reveal>
+                    <div><p class="section-code">04 / PROCESO</p><h2 id="process-title">Un proceso claro desde la primera solicitud</h2></div>
+                    <p>La propuesta indica actividades, entregables, requisitos, tiempos, exclusiones y condiciones.</p>
                 </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                            allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
+                <ol class="process-track">
+                    <li data-reveal><span>01</span><div><h3>Cuéntanos qué necesitas</h3><p>Selecciona una categoría y comparte ubicación, fechas y contexto.</p></div></li>
+                    <li data-reveal><span>02</span><div><h3>Revisamos la información</h3><p>Validamos alcance, documentos, cantidades y condiciones del sitio.</p></div></li>
+                    <li data-reveal><span>03</span><div><h3>Definimos la cotización</h3><p>Separamos lo incluido, los entregables y lo que requiere visita.</p></div></li>
+                    <li data-reveal><span>04</span><div><h3>Programamos el servicio</h3><p>Coordinamos personal, entrega, atención en planta o seguimiento.</p></div></li>
+                    <li data-reveal><span>05</span><div><h3>Cerramos con evidencia</h3><p>Entregamos el reporte, constancia, registro o documento acordado.</p></div></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section-shell direct-followup" aria-labelledby="followup-title">
+            <div class="container"><div data-reveal><p class="section-code">05 / POR QUÉ COSAFE</p><h2 id="followup-title">Atención práctica y seguimiento directo</h2></div><ul data-reveal><li>Un solo punto de contacto para servicios EHSS.</li><li>Necesidades puntuales o recurrentes.</li><li>Cotizaciones basadas en datos reales.</li><li>Seguimiento de documentos, visitas y entregables.</li><li>Servicios para empresas de distintos tamaños.</li><li>Atención desde Matamoros para México y Estados Unidos, sujeta a cobertura.</li></ul></div>
+        </section>
+
+        <section class="section-shell coverage-section" aria-labelledby="coverage-title">
+            <div class="container coverage-layout">
+                <div data-reveal><p class="section-code">06 / COBERTURA</p><h2 id="coverage-title">Atención en México y Estados Unidos</h2><p>La cobertura depende del servicio, ubicación, personal, traslados y requisitos técnicos o legales de cada zona.</p><a class="btn btn-outline-dark" href="contact.html">Consultar cobertura</a></div>
+                <ul class="coverage-checks" data-reveal>
+                    <li><i class="fa fa-map-marker-alt" aria-hidden="true"></i><span><strong>Ubicación</strong> Ciudad, estado, país y número de centros de trabajo.</span></li>
+                    <li><i class="fa fa-tools" aria-hidden="true"></i><span><strong>Modalidad</strong> Servicio presencial, remoto o híbrido.</span></li>
+                    <li><i class="fa fa-calendar-check" aria-hidden="true"></i><span><strong>Programación</strong> Fechas, horarios, acceso y documentación.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-shell faq-section" aria-labelledby="faq-title">
+            <div class="container faq-layout">
+                <div data-reveal><p class="section-code">07 / PREGUNTAS FRECUENTES</p><h2 id="faq-title">Lo que necesitas saber antes de cotizar</h2><p>Si tu caso requiere revisión adicional, te indicamos qué información falta.</p></div>
+                <div class="accordion accordion-flush" id="homeFaq" data-reveal>
+                    <div class="accordion-item"><h3 class="accordion-header" id="faq-h1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1">¿Puedo cotizar varios servicios?</button></h3><div id="faq-1" class="accordion-collapse collapse show" aria-labelledby="faq-h1" data-bs-parent="#homeFaq"><div class="accordion-body">Sí. Puedes agregar más de una categoría y revisar cada servicio por separado.</div></div></div>
+                    <div class="accordion-item"><h3 class="accordion-header" id="faq-h2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">¿La cotización es automática?</button></h3><div id="faq-2" class="accordion-collapse collapse" aria-labelledby="faq-h2" data-bs-parent="#homeFaq"><div class="accordion-body">Algunos servicios pueden estimarse. La propuesta final requiere revisión cuando depende de visita, documentación, cantidades o condiciones del sitio.</div></div></div>
+                    <div class="accordion-item"><h3 class="accordion-header" id="faq-h3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">¿Es necesario realizar una visita?</button></h3><div id="faq-3" class="accordion-collapse collapse" aria-labelledby="faq-h3" data-bs-parent="#homeFaq"><div class="accordion-body">Depende del servicio. Algunos se cotizan con fotografías y documentos; otros requieren inspección o levantamiento en sitio.</div></div></div>
+                    <div class="accordion-item"><h3 class="accordion-header" id="faq-h4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">¿Atienden solamente empresas grandes?</button></h3><div id="faq-4" class="accordion-collapse collapse" aria-labelledby="faq-h4" data-bs-parent="#homeFaq"><div class="accordion-body">No. Atendemos comercios, oficinas, almacenes, plantas, contratistas y centros de trabajo de distintos tamaños.</div></div></div>
+                    <div class="accordion-item"><h3 class="accordion-header" id="faq-h5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">¿Puedo adjuntar documentos?</button></h3><div id="faq-5" class="accordion-collapse collapse" aria-labelledby="faq-h5" data-bs-parent="#homeFaq"><div class="accordion-body">Sí. El cotizador acepta PDF, fotografías, hojas de cálculo y documentos de soporte dentro de los límites indicados.</div></div></div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
+        </section>
 
+        <section class="final-cta" aria-labelledby="cta-title">
+            <div class="container" data-reveal><p class="section-code">SIGUIENTE PASO</p><h2 id="cta-title">Solicita una cotización con el alcance correcto</h2><p>Comparte el servicio, ubicación y fecha. Adjunta fotografías o documentos si los tienes para reducir preguntas posteriores.</p><div><a href="quote.html" class="btn btn-light btn-lg">Iniciar cotización</a><a href="tel:+528683546152" class="btn btn-outline-light btn-lg">Hablar con CoSAFE</a></div></div>
+        </section>
+    </main>
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">SERVICIOS</p>
-                <h1 class="display-5 mb-4">Brindamos Los Mejores Servicios</h1>
-            </div>
-            <div class="row gy-5 gx-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/Servicios/cosafe-servicios-salud-medicina.png" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Médicos & Enfermeros</h3>
-                                <hr class="w-25">
-                            </div>
-                        </div>
+    <footer class="container-fluid bg-dark footer py-5">
+        <div class="container py-4"><div class="row g-5">
+            <div class="col-lg-4 col-md-6"><img class="footer-logo" src="img/cosafe-consultoria-ehss.png" alt="CoSAFE Consultoría" width="167" height="63"><p class="mt-4">Soluciones EHSS para la industria maquiladora y de servicios desde 2016.</p><p class="topbar-kicker text-light">Atención en México y Estados Unidos</p></div>
+            <div class="col-lg-2 col-md-6"><h2 class="h5 text-white mb-4">Accesos</h2><a class="btn btn-link" href="about.html">Acerca de</a><a class="btn btn-link" href="service.html">Servicios</a><a class="btn btn-link" href="quote.html">Cotizar</a><a class="btn btn-link" href="contact.html">Contacto</a></div>
+            <div class="col-lg-3 col-md-6"><h2 class="h5 text-white mb-4">Servicios</h2><a class="btn btn-link" href="service.html#proteccion-civil">Protección Civil</a><a class="btn btn-link" href="service.html#salud">Salud ocupacional</a><a class="btn btn-link" href="service.html#ambiental">Estudios ambientales</a><a class="btn btn-link" href="service.html#extintores">Extintores y EPP</a></div>
+            <div class="col-lg-3 col-md-6"><h2 class="h5 text-white mb-4">Contacto</h2><address><p>Mezquite 43, Las Arboledas<br>Heroica Matamoros, Tamaulipas</p><a href="tel:+528683546152">+52 868 354 6152</a><br><a href="mailto:gerencias@cosafeconsultoria.com">gerencias@cosafeconsultoria.com</a></address><p class="small mb-0">Confirma disponibilidad por teléfono o cotización.</p></div>
+        </div></div>
+    </footer>
+    <div class="container-fluid copyright bg-dark py-4"><div class="container text-center"><p class="mb-0">© <span data-current-year>2026</span> CoSAFE Consultoría. Todos los derechos reservados.</p></div></div>
 
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/Servicios/cosafe-servicios-ambientales-sostenibilidad.png" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Trámites & Asesoría ambiental</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                    
-                    </div>
-                 
-                 
-                    
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
-                        <div class="service-img">
-                            <img class="img-fluid" src="img/Servicios/cosafe-servicios-cursos-certificaciones-estudios.png" alt="">
-                        </div>
-                        <div class="service-detail">
-                            <div class="service-title">
-                                <hr class="w-25">
-                                <h3 class="mb-0">Cursos & Capacitaciones</h3>
-                                <hr class="w-25">
-                            </div>
-                            <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-               <div class="service-item text-center">
-                        <!-- Contenido del service-item -->
-                        <a class="btn btn-light my-2" href="service.html" style="background-color: #00AA3A; color: white;">Mas</a>
-                    </div>
-        </div>
-    </div>
-    <!-- Service End -->
+    <a class="whatsapp-quick" href="https://wa.me/528683546152" target="_blank" rel="noopener" aria-label="Hablar con CoSAFE por WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i><span>WhatsApp</span></a>
+    <a href="#main-content" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Volver al inicio"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Features Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center"> <!-- Agregar estas clases -->
-                    <p class="fw-medium text-uppercase text-primary mb-2">POR QUE ELEGIRNOS!</p>
-                </div>
-                <div class="d-flex align-items-center"> <!-- Agregar estas clases -->
-                    <h1 class="display-5 mb-4">¡Descubre Por Qué Somos Tu Elección En EHSS!</h1>
-                </div>
-                <div class="d-flex align-items-center"> <!-- Agregar estas clases -->
-                    <p class="mb-4">Líderes comprometidos con tu seguridad, salud y bienestar,
-                        así como con el cuidado del medio ambiente. En la industria maquiladora y de servicios,
-                        marcamos la diferencia. Nuestra misión y visión son el motor que impulsa nuestra excelencia
-                        en cada proyecto.
-                    </p>
-                </div>
-                <div class="row gy-4">
-                    <div class="col-12">
-                        <div class="d-flex align-items-center"> <!-- Agregar estas clases -->
-                            <div class="mb-0">
-                                <h4>Vanguardia de la Seguridad</h4>
-                                <span>Nuestra firme dedicación a la seguridad, salud y bienestar.
-                                    Con vasta experiencia en la industria maquiladora y de servicios</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-flex align-items-center"> <!-- Agregar estas clases -->
-                            <div class="mb-0">
-                                <h4>Soluciones para un Futuro Sostenible</h4>
-                                <span>Afrontamos los retos cambiantes de EHSS con innovación
-                                    de avanzadas tecnologías,
-                                    allanando el camino a un futuro más seguro y sostenible</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="d-flex align-items-center"> <!-- Agregar estas clases -->
-                            <div class="mb-0">
-                                <h4>Fuerza que Impulsa la Excelencia</h4>
-                                <span>Nuestra misión de seguridad y bienestar, junto a la visión global EHSS,
-                                    cimientan nuestra labor. en cada paso que damos es un paso hacia la excelencia y calidad</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="position-relative me-lg-4">
-                    <img class="img-fluid w-100" src="img/feature.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Features End -->
-
-    <!-- Project Start -->
-    <div class="container-fluid bg-dark pt-5 my-5 px-0">
-        <div class="text-center mx-auto mt-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-            <p class="fw-medium text-uppercase text-primary mb-2">CERTIFICACIONES</p>
-            <h1 class="display-5 text-white mb-5">Descubre Cómo Podemos Certificarte</h1>
-        </div>
-        <div class="owl-carousel project-carousel wow fadeIn" data-wow-delay="0.1s">
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/Certificacines/certificacion-stps-cosafe.png" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">NOM-002-STPS</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/Certificacines/cosafe-certificacion-527909.png" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">NOM-005-STPS</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/Certificacines/cosafe-certificacion-reconocer.png" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">NOM-004-STPS</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/Certificacines/cosafe-certificacion-proteccioncivil-tamaulipas.png" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">NOM-005-STPS</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/Certificacines/cosafe-certificacion-proteccioncivil.png" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">NOM-017-STPS  </h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/Certificacines/cosafe-certificacion-REPSE.png" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">NOM-027-STPS</h5>
-                </div>
-            </a>
-            <a class="project-item" href="">
-                <img class="img-fluid" src="img/Certificacines/cosafe-certificacion-conocer.png" alt="">
-                <div class="project-title">
-                    <h5 class="text-primary mb-0">NOM-029-STPS</h5>
-                </div>
-            </a>
-        </div>
-    </div>
-    <!-- Project End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">CALIDAD Y CONFIANZA</p>
-                <h1 class="display-5 mb-5">Que Dicen Nuestras Recomendaciones!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/Recomendaciones/index-cosaferecomendacion.png">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>INDEX</p>
-                        <h5 class="mb-1">Rosalinda Torres Cárdenas</h5>
-                        <span class="fst-italic">Optamos por Cosafe Consultorías por su experiencia probada. Desde el inicio, su enfoque en ejemplos prácticos potenció nuestro aprendizaje. A lo largo del tiempo, su apoyo abarcó una gama diversa de temas. ¿Lo más impresionante? Siempre supera expectativas, brindando un valor excepcional</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/Recomendaciones/imms-dr-jose-castanon.png">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>IMSS</p>
-                        <h5 class="mb-1">Jose Francisco Castañon Quintana</h5>
-                        <span class="fst-italic">
-                            Un agradecimiento sincero por potenciar nuestros proyectos y metas en la Unidad Médica de Atención Ambulatoria N° 39. Su confianza y contribución dan vida a nuestro compromiso con los beneficiarios y el equipo. ¡Juntos marcamos la diferencia!</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/Recomendaciones/agroquimicos-cosaferecomendacion.png">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>AGROQUIMICOS Y EQUIPOS S.A. DE C.V.</p>
-                        <h5 class="mb-1">Emmanuel Ramos Balderas</h5>
-                        <span class="fst-italic">Durante dos años de colaboración, CoSafe ha elevado nuestros estándares de seguridad, salud y medio ambiente a nuevos niveles, fortaleciendo a nuestro equipo y generando resultados sobresalientes. ¡Una alianza que transforma y protege!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Nuestra Oficina</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mezquite 43, Las Arboledas, Matamoros, Tamps.</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+52 868 354 6152</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>gerencias@cosafeconsultoria.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Accesos</h5>
-                    <a class="btn btn-link" href="">Acerca De</a>
-                    <a class="btn btn-link" href="">Contacto</a>
-                    <a class="btn btn-link" href="">Servicios</a>
-                    <a class="btn btn-link" href="">Terminos y Condiciones</a>
-
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Horario de Atencion</h5>
-                    <p class="mb-1">Lunes - Viernes</p>
-                    <h6 class="text-light">07:00 am - 06:00 pm</h6>
-                    <p class="mb-1">Sabado</p>
-                    <h6 class="text-light">Cerrado</h6>
-                    <p class="mb-1">Domingo</p>
-                    <h6 class="text-light">Cerrado</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
-        <div class="container text-center">
-            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">coSAFE</a>, Todos los Derechos Reservados.
-            </p>
-            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            <p class="mb-0">Creado por <a class="fw-semi-bold" href="https://arrowupsolutions.com">ArrowUp</a>
-        </div>
-    </div>
-    <!-- Copyright End -->
-
-  <!--Whatsaap -->
-
- <div>
-    <div class="trwpwhatsappall">
-        <div class="trwpwhatsappballon">
-         <span id="kapatac" class="kapat">X</span>
-          <div class="trwpwhatsapptitle">
-              Hablar con un experto 
-               🌱⛑️
-          </div>
-          <div class="trwpwhatsappmessage">
-             Hola, Como podemos ayudatr?
-          </div>
-          <div class="trwpwhatsappinput">
-            <form action="https://web.whatsapp.com/send?" method="get" target="_blank">
-              <input type="text" name="phone" value="+528311606082" hidden>
-                <input type="text" name="text" placeholder="Escribir mensaje." autocomplete="off">
-              <button class="trwpwhatsappsendbutton" type="submit">
-                <i class="bi">
-                    <img src="send.svg" width="16" height="16" alt="Descripción del ícono">
-                  </i>
-                  
-              </button>
-            </form>
-          </div>
-        </div>
-        
-        
-        <div id="ackapa" class="trwpwhatsappbutton">
-        <i class="bi bi-whatsapp"></i> <span>Whatsapp coSAFE</span>
-        </div>
- </div>
-
-
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -680,16 +221,6 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-
-
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/movimiento.js"></script>
-    <script src="js/whatsaap.js"></script>
-
-   
-   
 </body>
-
 </html>

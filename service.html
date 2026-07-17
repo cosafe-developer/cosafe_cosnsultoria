@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="utf-8">
-    <title>coSAFE | Soluciones en Salud, Sostenibilidad, Seguridad y Ambiente</title>
+    <title>Servicios EHSS para Empresas | CoSAFE Consultoría</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Consulta servicios de Protección Civil, enfermería industrial, exámenes médicos, estudios técnicos, trámites ambientales, EPP y extintores." name="description">
 
     <!-- Favicon -->
     <link href="img/cosafe-consultoria-ehss.png" rel="icon" type="image/png">
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -37,6 +37,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -45,76 +46,62 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-         <div class="row g-0 d-none d-lg-flex">
-             <div class="col-lg-6 ps-5 text-start">
-                 <div class="h-100 d-inline-flex align-items-center text-white">
-                     <span class="ms-2">Follow Us:</span>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                     
-                 </div>
-
-                 
-             </div>
-
-             
-             <div class="col-lg-6 text-end" >
-                
-                <img src="img/flag-mx.png.png" alt="MX Flag">
-                <span style="margin-right: 20px;"></span>
-                <img src="img/flag-us.png.png" alt="US Flag">
-                <span style="margin-right: 50px;"></span>
-
-                 <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
-                     <a href="tel:+528683546152" class="fs-5 fw-bold me-2" style="color: white;">
-                         <i class="fa fa-phone-alt me-2"></i>Llamanos:</a>
-                     <a href="tel:+528683546152" class="fs-5 fw-bold" style="color: white;">+52 868 354 6152</a>
-                 </div>
-             </div>
-         </div>
+    <div class="container-fluid bg-dark px-0" role="region" aria-label="Información de contacto">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center gap-3 text-white topbar-kicker">
+                    <span>Consultoría EHSS industrial</span>
+                    <span class="topbar-flags d-inline-flex gap-2" aria-label="Atención en México y Estados Unidos">
+                        <img src="img/flag-mx.png.png" alt="" aria-hidden="true">
+                        <img src="img/flag-us.png.png" alt="" aria-hidden="true">
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <a href="tel:+528683546152" class="fs-6 fw-bold text-white">
+                        <i class="fa fa-phone-alt me-2" aria-hidden="true"></i>Llámanos: +52 868 354 6152
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <div class="navbar-brand ps-5 me-0">
-            <div>
-                <img src="img/cosafe-consultoria-ehss.png" width="167" height="63">
-            </div>
-
-        </div>
-
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5" aria-label="Navegación principal">
+        <a class="navbar-brand ps-5 me-0" href="index.html" aria-label="coSAFE Consultoría, ir al inicio">
+            <img src="img/cosafe-consultoria-ehss.png" width="167" height="63" alt="coSAFE Consultoría EHSS">
         </a>
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
                 <a href="about.html" class="nav-item nav-link">Acerca de</a>
-                <a href="service.html" class="nav-item nav-link">Servicios</a>
-                <a href="team.html" class="nav-item nav-link">Blog</a>
+                <a href="service.html" class="nav-item nav-link active" aria-current="page">Servicios</a>
+                <a href="quote.html" class="nav-item nav-link">Cotizar</a>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="" class="btn btn-primary px-3 d-none d-lg-block">Cotizar</a>
+            <a href="quote.html" class="btn btn-primary px-3 d-none d-lg-block">Solicitar cotización</a>
+            <a href="tel:+528683546152" class="btn btn-outline-primary mx-4 mb-4 d-lg-none">Llamar ahora</a>
         </div>
     </nav>
     <!-- Navbar End -->
+    <main id="main-content" tabindex="-1">
    
 
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-3 text-white animated slideInRight">Servicios</h1>
+            <h1 class="display-3 text-white animated slideInRight">Soluciones EHSS para la industria y empresas de servicios</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb animated slideInRight mb-0">
-                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="#">Paginas</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Servicios</li>
                 </ol>
             </nav>
@@ -126,129 +113,147 @@
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="fw-medium text-uppercase text-primary mb-2">Servicios EHS</p>
-                <h1 class="display-5 mb-4">Brindamos Los Mejores Servicios</h1>
+            <div class="services-intro" data-reveal>
+                <div><p class="section-code">SERVICIOS / MAPA DE ATENCI&Oacute;N</p><h2>Encuentra la soluci&oacute;n que necesita tu operaci&oacute;n</h2><p>Comienza por el problema o el tipo de apoyo. Cada ruta muestra el alcance disponible y te lleva a una solicitud espec&iacute;fica.</p></div>
+                <dl class="services-index" aria-label="Resumen del catálogo"><div><dt>09</dt><dd>rutas de servicio</dd></div><div><dt>06</dt><dd>categorías EHSS</dd></div><div><dt>01</dt><dd>solicitud guiada</dd></div></dl>
             </div>
-            <div class="row gy-5 gx-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="catalog-toolbar" role="group" aria-label="Filtrar servicios">
+                <button class="is-active" type="button" data-catalog-filter="all" aria-pressed="true" aria-controls="serviceCatalog">Todas las rutas</button>
+                <button type="button" data-catalog-filter="principal" aria-pressed="false" aria-controls="serviceCatalog">EHSS</button>
+                <button type="button" data-catalog-filter="transversal" aria-pressed="false" aria-controls="serviceCatalog">Trámites</button>
+                <button type="button" data-catalog-filter="complementario" aria-pressed="false" aria-controls="serviceCatalog">Complementarios</button>
+            </div>
+            <p class="catalog-status" id="catalogStatus" role="status" aria-live="polite">Mostrando todas las rutas de atención</p>
+            <div id="serviceCatalog" class="service-catalog" aria-live="polite"></div>
+            <div class="row gy-5 gx-4 d-none" aria-hidden="true">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" id="ambiental" data-wow-delay="0.1s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        <img class="img-fluid" src="img/service-1.jpg" alt="Inspección ambiental en una instalación industrial">
                         <div class="service-img">
                             <img class="img-fluid" src="img/Servicios/cosafe-servicios-ambientales-sostenibilidad.png" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Tramites y Soluciones Ambientales</h3>
+                                <h3 class="mb-0">Trámites y soluciones ambientales</h3>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
+                                <p class="text-white mb-0">Diagnóstico, gestión documental y acompañamiento para permisos, cumplimiento y desempeño ambiental.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Read More</a>
+                        <a class="btn btn-light" href="contact.html#cotizacion">Solicitar alcance</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" id="capacitacion" data-wow-delay="0.3s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid" src="img/service-2.jpg" alt="Capacitación de seguridad para personal industrial">
                         <div class="service-img">
                             <img class="img-fluid" src="img/Servicios/cosafe-servicios-cursos-certificaciones-estudios.png" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Cursos y Certificaciones</h3>
+                                <h3 class="mb-0">Cursos y capacitaciones</h3>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
+                                <p class="text-white mb-0">Formación para personal operativo, mandos y brigadas con alcance y evidencia según el servicio.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Read More</a>
+                        <a class="btn btn-light" href="contact.html#cotizacion">Solicitar alcance</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" id="proteccion-civil" data-wow-delay="0.5s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <img class="img-fluid" src="img/service-3.jpg" alt="Supervisión técnica en una planta industrial">
                         <div class="service-img">
                             <img class="img-fluid" src="img/Servicios/cosafe-servicios-industriayservicios-manufactura.png" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Servicios y Servicios industriales</h3>
+                                <h3 class="mb-0">Protección Civil</h3>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
+                                <p class="text-white mb-0">Programas internos, simulacros, vistos buenos, dictámenes y trámites relacionados.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Read More</a>
+                        <a class="btn btn-light" href="contact.html#cotizacion">Solicitar alcance</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" id="salud" data-wow-delay="0.1s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        <img class="img-fluid" src="img/service-1.jpg" alt="Atención de salud ocupacional en sitio">
                         <div class="service-img">
                             <img class="img-fluid" src="img/Servicios/cosafe-servicios-salud-medicina.png" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Salud y Medicina</h3>
+                                <h3 class="mb-0">Salud ocupacional</h3>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
+                                <p class="text-white mb-0">Médicos, enfermería y programas preventivos enfocados en la salud ocupacional de tu personal.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Read More</a>
+                        <a class="btn btn-light" href="contact.html#cotizacion">Solicitar alcance</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" id="epp" data-wow-delay="0.3s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        <img class="img-fluid" src="img/service-2.jpg" alt="Equipo de protección y seguridad operativa">
                         <div class="service-img">
                             <img class="img-fluid" src="img/Servicios/cosafe-servicios-seguridad-personal-suministros.png" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Seguridad Operativa y Suministros</h3>
+                                <h3 class="mb-0">Equipo de protección personal</h3>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
+                                <p class="text-white mb-0">Asesoría, venta y suministro de EPP según actividad, riesgo, cantidad y frecuencia.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Read More</a>
+                        <a class="btn btn-light" href="contact.html#cotizacion">Solicitar alcance</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" id="estudios" data-wow-delay="0.5s">
                     <div class="service-item">
-                        <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        <img class="img-fluid" src="img/service-3.jpg" alt="Documentación técnica y estudios de cumplimiento">
                         <div class="service-img">
                             <img class="img-fluid" src="img/Servicios/cosafe-servicios-cursos-certificaciones-estudios.png" alt="">
                         </div>
                         <div class="service-detail">
                             <div class="service-title">
                                 <hr class="w-25">
-                                <h3 class="mb-0">Plumbing & Water Treatment</h3>
+                                <h3 class="mb-0">Estudios técnicos y seguridad industrial</h3>
                                 <hr class="w-25">
                             </div>
                             <div class="service-text">
-                                <p class="text-white mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos
-                                    lorem sed diam stet diam sed stet.</p>
+                                <p class="text-white mb-0">Estudios técnicos, expedientes y planes de acción para atender requisitos de autoridades y clientes.</p>
                             </div>
                         </div>
-                        <a class="btn btn-light" href="">Read More</a>
+                        <a class="btn btn-light" href="contact.html#cotizacion">Solicitar alcance</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" id="extintores" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="img/service-2.jpg" alt="Inspección y mantenimiento de extintores">
+                        <div class="service-img"><img class="img-fluid" src="img/Servicios/cosafe-servicios-seguridad-personal-suministros.png" alt=""></div>
+                        <div class="service-detail"><div class="service-title"><hr class="w-25"><h3 class="mb-0">Extintores</h3><hr class="w-25"></div><div class="service-text"><p class="text-white mb-0">Venta, recarga, mantenimiento, inspección, señalización y servicio recurrente.</p></div></div>
+                        <a class="btn btn-light" href="contact.html#cotizacion">Solicitar alcance</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" id="intendencia" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="img/service-3.jpg" alt="Personal de apoyo operativo en instalaciones industriales">
+                        <div class="service-img"><img class="img-fluid" src="img/Servicios/cosafe-servicios-industriayservicios-manufactura.png" alt=""></div>
+                        <div class="service-detail"><div class="service-title"><hr class="w-25"><h3 class="mb-0">Intendencia y suministros</h3><hr class="w-25"></div><div class="service-text"><p class="text-white mb-0">Personal por turno o periodo y suministros asociados al alcance contratado.</p></div></div>
+                        <a class="btn btn-light" href="contact.html#cotizacion">Solicitar alcance</a>
                     </div>
                 </div>
             </div>
@@ -256,6 +261,15 @@
     </div>
     <!-- Service End -->
 
+    <section class="section-shell master-details" aria-labelledby="master-details-title">
+        <div class="container">
+            <div class="section-heading"><div><p class="section-code">FICHAS DETALLADAS / FUENTE MAESTRA</p><h2 id="master-details-title">Qué resuelve y qué incluye cada servicio</h2></div><p>Revisa el alcance disponible, las modalidades y los entregables antes de elegir una ruta de atención.</p></div>
+            <div id="masterServiceDetails" class="master-service-details"><p role="status">Cargando fichas detalladas…</p></div>
+        </div>
+    </section>
+
+
+    </main>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
@@ -266,33 +280,19 @@
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mezquite 43, Las Arboledas, Matamoros, Tamps.</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+52 868 354 6152</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>gerencias@cosafeconsultoria.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <p class="topbar-kicker text-light mt-3 mb-0">Atención en México y Estados Unidos</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Accesos</h5>
-                    <a class="btn btn-link" href="">Acerca De</a>
-                    <a class="btn btn-link" href="">Contacto</a>
-                    <a class="btn btn-link" href="">Servicios</a>
-                    <a class="btn btn-link" href="">Terminos y Condiciones</a>
+                    <a class="btn btn-link" href="about.html">Acerca de</a>
+                    <a class="btn btn-link" href="contact.html">Contacto</a>
+                    <a class="btn btn-link" href="service.html">Servicios</a>
+                    <a class="btn btn-link" href="team.html">Blog técnico</a>
 
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Horario de Atencion</h5>
-                    <p class="mb-1">Lunes - Viernes</p>
-                    <h6 class="text-light">07:00 am - 06:00 pm</h6>
-                    <p class="mb-1">Sabado</p>
-                    <h6 class="text-light">Cerrado</h6>
-                    <p class="mb-1">Domingo</p>
-                    <h6 class="text-light">Cerrado</h6>
+                    <h5 class="text-white mb-4">Disponibilidad</h5>
+                    <p>Para confirmar atención, comunícate por teléfono o envía una solicitud de cotización.</p>
                 </div>
             </div>
         </div>
@@ -303,10 +303,10 @@
     <!-- Copyright Start -->
     <div class="container-fluid copyright bg-dark py-4">
         <div class="container text-center">
-            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">coSAFE</a>, Todos los Derechos Reservados.
+            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="index.html">coSAFE</a>, Todos los derechos reservados.
             </p>
             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            <p class="mb-0">Creado por <a class="fw-semi-bold" href="https://arrowupsolutions.com">ArrowUp</a>
+            <p class="mb-0">Creado por <a class="fw-semi-bold" href="https://arrowupsolutions.com">ArrowUp</a></p>
         </div>
     </div>
     <!-- Copyright End -->
@@ -322,9 +322,11 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/catalog.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
 </body>
 
 </html>

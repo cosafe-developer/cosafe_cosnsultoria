@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="utf-8">
-    <title>coSAFE | Soluciones en Salud, Sostenibilidad, Seguridad y Ambiente</title>
+    <title>Blog técnico EHSS | coSAFE Consultoría</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Consultoría EHSS para industria: seguridad, salud ocupacional, cumplimiento ambiental, capacitación y certificaciones en México." name="description">
 
     <!-- Favicon -->
     <link href="img/cosafe-consultoria-ehss.png" rel="icon" type="image/png">
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -37,6 +37,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -45,65 +46,52 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-0">
-         <div class="row g-0 d-none d-lg-flex">
-             <div class="col-lg-6 ps-5 text-start">
-                 <div class="h-100 d-inline-flex align-items-center text-white">
-                     <span class="ms-2">Follow Us:</span>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
-                     <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
-                     
-                 </div>
-
-                 
-             </div>
-
-             
-             <div class="col-lg-6 text-end" >
-                
-                <img src="img/flag-mx.png.png" alt="MX Flag">
-                <span style="margin-right: 20px;"></span>
-                <img src="img/flag-us.png.png" alt="US Flag">
-                <span style="margin-right: 50px;"></span>
-
-                 <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
-                     <a href="tel:+528683546152" class="fs-5 fw-bold me-2" style="color: white;">
-                         <i class="fa fa-phone-alt me-2"></i>Llamanos:</a>
-                     <a href="tel:+528683546152" class="fs-5 fw-bold" style="color: white;">+52 868 354 6152</a>
-                 </div>
-             </div>
-         </div>
+    <div class="container-fluid bg-dark px-0" role="region" aria-label="Información de contacto">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center gap-3 text-white topbar-kicker">
+                    <span>Consultoría EHSS industrial</span>
+                    <span class="topbar-flags d-inline-flex gap-2" aria-label="Atención en México y Estados Unidos">
+                        <img src="img/flag-mx.png.png" alt="" aria-hidden="true">
+                        <img src="img/flag-us.png.png" alt="" aria-hidden="true">
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <a href="tel:+528683546152" class="fs-6 fw-bold text-white">
+                        <i class="fa fa-phone-alt me-2" aria-hidden="true"></i>Llámanos: +52 868 354 6152
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <div class="navbar-brand ps-5 me-0">
-            <div>
-                <img src="img/cosafe-consultoria-ehss.png" width="167" height="63">
-            </div>
-
-        </div>
-
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5" aria-label="Navegación principal">
+        <a class="navbar-brand ps-5 me-0" href="index.html" aria-label="coSAFE Consultoría, ir al inicio">
+            <img src="img/cosafe-consultoria-ehss.png" width="167" height="63" alt="coSAFE Consultoría EHSS">
         </a>
-        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Abrir menú de navegación">
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="index.html" class="nav-item nav-link">Inicio</a>
                 <a href="about.html" class="nav-item nav-link">Acerca de</a>
                 <a href="service.html" class="nav-item nav-link">Servicios</a>
-                <a href="team.html" class="nav-item nav-link">Blog</a>
+                <a href="quote.html" class="nav-item nav-link">Cotizar</a>
                 <a href="contact.html" class="nav-item nav-link">Contacto</a>
             </div>
-            <a href="" class="btn btn-primary px-3 d-none d-lg-block">Cotizar</a>
+            <a href="quote.html" class="btn btn-primary px-3 d-none d-lg-block">Solicitar cotización</a>
+            <a href="tel:+528683546152" class="btn btn-outline-primary mx-4 mb-4 d-lg-none">Llamar ahora</a>
         </div>
     </nav>
     <!-- Navbar End -->
+    <main id="main-content" tabindex="-1">
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
@@ -111,8 +99,8 @@
             <h1 class="display-3 text-white animated slideInRight">Blog</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb animated slideInRight mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Our Team</li>
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog técnico</li>
                 </ol>
             </nav>
         </div>
@@ -142,21 +130,16 @@
 
     <p></p>
     <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal1"
-                style="display: inline-block; padding: 10px 20px; background-color: #f8f8f8; color: #333; transition: background-color 0.3s ease, color 0.3s ease; text-align: center;"
-                onmouseover="this.style.backgroundColor='#00AA3A'; this.style.color='white';"
-                onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.color='#333';">Read More</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal1">Leer artículo</button>
     </div>
 </div>
 
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modalTitle1" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content" style="padding: 40px;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h2 class="modal-title h5" id="modalTitle1">La importancia de EHS en el medio ambiente</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
                 <img src="img/ImagenModal.jpg" style="max-width: 100%;" alt="Imagen 3">
@@ -165,7 +148,7 @@
                 <p class="fw-medium text-uppercase text-primary mb-2">MARTES, 7/MAYO/2019</p>
                 <p></p>
                 
-                <h1>La Importancia de EHS en el Medio Ambiente</h1>
+                <h2>La importancia de EHS en el medio ambiente</h2>
                 <p>La gestión de Medio Ambiente, Salud y Seguridad (EHS por sus siglas en inglés: Environment, Health, and Safety) es una parte fundamental en la preservación del entorno y el bienestar de las personas en la actualidad. EHS aborda la interacción entre las actividades humanas, la salud de las personas y la conservación del medio ambiente.</p>
         
                 <p>En un mundo donde la preocupación por el cambio climático, la contaminación y la sostenibilidad es cada vez mayor, la implementación de prácticas EHS efectivas se ha convertido en un imperativo para las organizaciones y la sociedad en general.</p>
@@ -205,10 +188,7 @@
 
     <p></p>
     <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal2"
-                style="display: inline-block; padding: 10px 20px; background-color: #f8f8f8; color: #333; transition: background-color 0.3s ease, color 0.3s ease; text-align: center;"
-                onmouseover="this.style.backgroundColor='#00AA3A'; this.style.color='white';"
-                onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.color='#333';">Read More</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal2">Leer artículo</button>
     </div>
 </div>
 
@@ -217,14 +197,12 @@
 
 
 
-<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modalTitle2" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content" style="padding: 40px;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h2 class="modal-title h5" id="modalTitle2">La importancia de EHS en el medio ambiente</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
                 <img src="img/ImagenModal.jpg" style="max-width: 100%;" alt="Imagen 2">
@@ -233,7 +211,7 @@
                 <p class="fw-medium text-uppercase text-primary mb-2">MARTES, 7/MAYO/2019</p>
                 <p></p>
                 
-                <h1>La Importancia de EHS en el Medio Ambiente</h1>
+                <h2>La importancia de EHS en el medio ambiente</h2>
                 <p>La gestión de Medio Ambiente, Salud y Seguridad (EHS por sus siglas en inglés: Environment, Health, and Safety) es una parte fundamental en la preservación del entorno y el bienestar de las personas en la actualidad. EHS aborda la interacción entre las actividades humanas, la salud de las personas y la conservación del medio ambiente.</p>
         
                 <p>En un mundo donde la preocupación por el cambio climático, la contaminación y la sostenibilidad es cada vez mayor, la implementación de prácticas EHS efectivas se ha convertido en un imperativo para las organizaciones y la sociedad en general.</p>
@@ -270,22 +248,17 @@
 
     <p></p>
     <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal3"
-                style="display: inline-block; padding: 10px 20px; background-color: #f8f8f8; color: #333; transition: background-color 0.3s ease, color 0.3s ease; text-align: center;"
-                onmouseover="this.style.backgroundColor='#00AA3A'; this.style.color='white';"
-                onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.color='#333';">Read More</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal3">Leer artículo</button>
     </div>
 </div>
 
 
-<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modalTitle3" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content" style="padding: 40px;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h2 class="modal-title h5" id="modalTitle3">La importancia de EHS en el medio ambiente</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
                 <img src="img/ImagenModal.jpg" style="max-width: 100%;" alt="Imagen 3">
@@ -294,7 +267,7 @@
                 <p class="fw-medium text-uppercase text-primary mb-2">MARTES, 7/MAYO/2019</p>
                 <p></p>
                 
-                <h1>La Importancia de EHS en el Medio Ambiente</h1>
+                <h2>La importancia de EHS en el medio ambiente</h2>
                 <p>La gestión de Medio Ambiente, Salud y Seguridad (EHS por sus siglas en inglés: Environment, Health, and Safety) es una parte fundamental en la preservación del entorno y el bienestar de las personas en la actualidad. EHS aborda la interacción entre las actividades humanas, la salud de las personas y la conservación del medio ambiente.</p>
         
                 <p>En un mundo donde la preocupación por el cambio climático, la contaminación y la sostenibilidad es cada vez mayor, la implementación de prácticas EHS efectivas se ha convertido en un imperativo para las organizaciones y la sociedad en general.</p>
@@ -334,21 +307,16 @@
 
     <p></p>
     <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal4"
-                style="display: inline-block; padding: 10px 20px; background-color: #f8f8f8; color: #333; transition: background-color 0.3s ease, color 0.3s ease; text-align: center;"
-                onmouseover="this.style.backgroundColor='#00AA3A'; this.style.color='white';"
-                onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.color='#333';">Read More</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal4">Leer artículo</button>
     </div>
 </div>
 
-<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modalTitle4" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content" style="padding: 40px;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h2 class="modal-title h5" id="modalTitle4">La importancia de EHS en el medio ambiente</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
                 <img src="img/ImagenModal.jpg" style="max-width: 100%;" alt="Imagen 4">
@@ -357,7 +325,7 @@
                 <p class="fw-medium text-uppercase text-primary mb-2">MARTES, 7/MAYO/2019</p>
                 <p></p>
                 
-                <h1>La Importancia de EHS en el Medio Ambiente</h1>
+                <h2>La importancia de EHS en el medio ambiente</h2>
                 <p>La gestión de Medio Ambiente, Salud y Seguridad (EHS por sus siglas en inglés: Environment, Health, and Safety) es una parte fundamental en la preservación del entorno y el bienestar de las personas en la actualidad. EHS aborda la interacción entre las actividades humanas, la salud de las personas y la conservación del medio ambiente.</p>
         
                 <p>En un mundo donde la preocupación por el cambio climático, la contaminación y la sostenibilidad es cada vez mayor, la implementación de prácticas EHS efectivas se ha convertido en un imperativo para las organizaciones y la sociedad en general.</p>
@@ -396,21 +364,16 @@
 
     <p></p>
     <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal5"
-                style="display: inline-block; padding: 10px 20px; background-color: #f8f8f8; color: #333; transition: background-color 0.3s ease, color 0.3s ease; text-align: center;"
-                onmouseover="this.style.backgroundColor='#00AA3A'; this.style.color='white';"
-                onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.color='#333';">Read More</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal5">Leer artículo</button>
     </div>
 </div>
 
-<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modalTitle5" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content" style="padding: 40px;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h2 class="modal-title h5" id="modalTitle5">La importancia de EHS en el medio ambiente</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
                 <img src="img/ImagenModal.jpg" style="max-width: 100%;" alt="Imagen 5">
@@ -419,7 +382,7 @@
                 <p class="fw-medium text-uppercase text-primary mb-2">MARTES, 7/MAYO/2019</p>
                 <p></p>
                 
-                <h1>La Importancia de EHS en el Medio Ambiente</h1>
+                <h2>La importancia de EHS en el medio ambiente</h2>
                 <p>La gestión de Medio Ambiente, Salud y Seguridad (EHS por sus siglas en inglés: Environment, Health, and Safety) es una parte fundamental en la preservación del entorno y el bienestar de las personas en la actualidad. EHS aborda la interacción entre las actividades humanas, la salud de las personas y la conservación del medio ambiente.</p>
         
                 <p>En un mundo donde la preocupación por el cambio climático, la contaminación y la sostenibilidad es cada vez mayor, la implementación de prácticas EHS efectivas se ha convertido en un imperativo para las organizaciones y la sociedad en general.</p>
@@ -459,21 +422,16 @@
 
     <p></p>
     <div style="display: flex; justify-content: center; align-items: center; margin: 0;">
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal6"
-                style="display: inline-block; padding: 10px 20px; background-color: #f8f8f8; color: #333; transition: background-color 0.3s ease, color 0.3s ease; text-align: center;"
-                onmouseover="this.style.backgroundColor='#00AA3A'; this.style.color='white';"
-                onmouseout="this.style.backgroundColor='#f8f8f8'; this.style.color='#333';">Read More</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal6">Leer artículo</button>
     </div>
 </div>
 
-<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modalTitle6" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content" style="padding: 40px;">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <h2 class="modal-title h5" id="modalTitle6">La importancia de EHS en el medio ambiente</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
             <div class="modal-body">
                 <img src="img/ImagenModal.jpg" style="max-width: 100%;" alt="Imagen 6">
@@ -482,7 +440,7 @@
                 <p class="fw-medium text-uppercase text-primary mb-2">MARTES, 7/MAYO/2019</p>
                 <p></p>
                 
-                <h1>La Importancia de EHS en el Medio Ambiente</h1>
+                <h2>La importancia de EHS en el medio ambiente</h2>
                 <p>La gestión de Medio Ambiente, Salud y Seguridad (EHS por sus siglas en inglés: Environment, Health, and Safety) es una parte fundamental en la preservación del entorno y el bienestar de las personas en la actualidad. EHS aborda la interacción entre las actividades humanas, la salud de las personas y la conservación del medio ambiente.</p>
         
                 <p>En un mundo donde la preocupación por el cambio climático, la contaminación y la sostenibilidad es cada vez mayor, la implementación de prácticas EHS efectivas se ha convertido en un imperativo para las organizaciones y la sociedad en general.</p>
@@ -536,6 +494,8 @@
 
 
 
+    </main>
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -545,33 +505,19 @@
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mezquite 43, Las Arboledas, Matamoros, Tamps.</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+52 868 354 6152</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>gerencias@cosafeconsultoria.com</p>
-                    <div class="d-flex pt-3">
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
+                    <p class="topbar-kicker text-light mt-3 mb-0">Atención en México y Estados Unidos</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Accesos</h5>
-                    <a class="btn btn-link" href="">Acerca De</a>
-                    <a class="btn btn-link" href="">Contacto</a>
-                    <a class="btn btn-link" href="">Servicios</a>
-                    <a class="btn btn-link" href="">Terminos y Condiciones</a>
+                    <a class="btn btn-link" href="about.html">Acerca de</a>
+                    <a class="btn btn-link" href="contact.html">Contacto</a>
+                    <a class="btn btn-link" href="service.html">Servicios</a>
+                    <a class="btn btn-link" href="team.html">Blog técnico</a>
 
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Horario de Atencion</h5>
-                    <p class="mb-1">Lunes - Viernes</p>
-                    <h6 class="text-light">07:00 am - 06:00 pm</h6>
-                    <p class="mb-1">Sabado</p>
-                    <h6 class="text-light">Cerrado</h6>
-                    <p class="mb-1">Domingo</p>
-                    <h6 class="text-light">Cerrado</h6>
+                    <h5 class="text-white mb-4">Disponibilidad</h5>
+                    <p>Para confirmar atención, comunícate por teléfono o envía una solicitud de cotización.</p>
                 </div>
             </div>
         </div>
@@ -582,10 +528,10 @@
     <!-- Copyright Start -->
     <div class="container-fluid copyright bg-dark py-4">
         <div class="container text-center">
-            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">coSAFE</a>, Todos los Derechos Reservados.
+            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="index.html">coSAFE</a>, Todos los derechos reservados.
             </p>
             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-            <p class="mb-0">Creado por <a class="fw-semi-bold" href="https://arrowupsolutions.com">ArrowUp</a>
+            <p class="mb-0">Creado por <a class="fw-semi-bold" href="https://arrowupsolutions.com">ArrowUp</a></p>
         </div>
     </div>
     <!-- Copyright End -->
@@ -603,7 +549,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
